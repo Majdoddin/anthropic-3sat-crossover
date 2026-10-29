@@ -1,0 +1,4 @@
+density 1.0: bar 0.0610; paper: schedule 2^{-l-5}, tau 1, x0 18: levels 7, log2 K = 7596; log2 m* >= 68364 (q = 9)
+density 2.0: bar 0.0610; paper: schedule 2^{-l-5}, tau 1, x0 18: levels 7, log2 K = 7596; log2 m* >= 68364 (q = 9)
+density 3.0: bar 0.0556; paper: schedule 2^{-l-5}, tau 1, x0 18: levels 8, log2 K = 15270; log2 m* >= 137430 (q = 9)
+density 4.26: bar 0.0391; paper: schedule 2^{-l-5}, tau 1, x0 18: levels 9, log2 K = 30624; log2 m* >= 275616 (q = 9)

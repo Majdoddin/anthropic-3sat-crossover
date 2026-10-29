@@ -1,0 +1,2 @@
+3-occurrence class vs pathwidth 2^{n/3}: target E < 0.333: r = 56, Q = 1.26e+06: log2 D = 1.46e+07; log2 n* >= 1.46e+07 (D <= n), 2.92e+07 (12 D^2 <= 3n)
+density theorem via copying (N = 3m) vs 2^{0.5283 m}: target E < 0.176: r = 106, Q = 6.31e+06: log2 D = 8.49e+07; log2 n* >= 8.49e+07 (D <= n), 1.70e+08 (12 D^2 <= 3n)

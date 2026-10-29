@@ -1,0 +1,9 @@
+mu(13) = 9.233765 >= 9; bracket 1 - 4/mu - mu^2 e^-mu at mu = 9: 0.54555936 >= 1/2
+shift pi/(6 sqrt(24*13)) = 0.029642943; log2(8 sqrt3) = 3.7924813
+analytic C_HR (n >= 13) = 3.835246978
+rounded up: C_HR = 3.84
+(2) exact p(n) > Lehmer-based lower bound > e^mu/(8 sqrt3 n), n = 13..24000 step 7: holds
+(3) exact: max over 1 <= E <= 24000 of c_HR sqrt E - log2 E - log2 p(E) = 3.7007 at E = 1 (<= C_HR = 3.84: True)
+(4) analytic range lambda = 271..10^14 (sampled as in r123_trace_c.py) with C_HR = 3.84: max need 9.588 at lambda = 100000000000000; limit of (b) as lambda -> oo is 4 + 4 sqrt2 = 9.657
+exact range max (from r123_trace_c_out.txt, independent of C_HR): 27.198 at lambda = 1
+c = ceil(max(27.198, 9.588)) + 2 = 30

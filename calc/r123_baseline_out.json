@@ -1,0 +1,317 @@
+[
+ {
+  "class": "brute force, Delta = 1 (paper's own remark)",
+  "bar": 0.16666666666666666,
+  "lever": "baseline (40): rho = 1/sqrt2, x0 = 18, q = 9",
+  "level": 4,
+  "log2K": 894.0,
+  "e": 0.15855070032855853,
+  "log2m": 8046.0
+ },
+ {
+  "class": "brute force, Delta = 1 (paper's own remark)",
+  "bar": 0.16666666666666666,
+  "lever": "q = 2 (top balancing g ~ K)",
+  "level": 4,
+  "log2K": 894.0,
+  "e": 0.15855070032855853,
+  "log2m": 1788.0
+ },
+ {
+  "class": "brute force, Delta = 1 (paper's own remark)",
+  "bar": 0.16666666666666666,
+  "lever": "x0 = 6",
+  "level": 5,
+  "log2K": 720.0,
+  "e": 0.12627059487914513,
+  "log2m": 6480.0
+ },
+ {
+  "class": "brute force, Delta = 1 (paper's own remark)",
+  "bar": 0.16666666666666666,
+  "lever": "rho = 0.6",
+  "level": 3,
+  "log2K": 420.0,
+  "e": 0.13989449256286024,
+  "log2m": 3780.0
+ },
+ {
+  "class": "brute force, Delta = 1 (paper's own remark)",
+  "bar": 0.16666666666666666,
+  "lever": "rho = 0.5",
+  "level": 2,
+  "log2K": 186.0,
+  "e": 0.16235977411270142,
+  "log2m": 1674.0
+ },
+ {
+  "class": "brute force, Delta = 1 (paper's own remark)",
+  "bar": 0.16666666666666666,
+  "lever": "constant growth beta = 16",
+  "level": 4,
+  "log2K": 34.0,
+  "e": 0.15855111086155282,
+  "log2m": 306.0
+ },
+ {
+  "class": "brute force, Delta = 1 (paper's own remark)",
+  "bar": 0.16666666666666666,
+  "lever": "constant growth beta = 16, x0 = 6, q = 2",
+  "level": 5,
+  "log2K": 26.0,
+  "e": 0.1274701265387081,
+  "log2m": 52.0
+ },
+ {
+  "class": "<= 3 occurrences (m <= n), pathwidth DP 2^{n/3}",
+  "bar": 0.05555555555555555,
+  "lever": "baseline (40): rho = 1/sqrt2, x0 = 18, q = 9",
+  "level": 8,
+  "log2K": 15270.0,
+  "e": 0.04025650835577219,
+  "log2m": 137430.0
+ },
+ {
+  "class": "<= 3 occurrences (m <= n), pathwidth DP 2^{n/3}",
+  "bar": 0.05555555555555555,
+  "lever": "q = 2 (top balancing g ~ K)",
+  "level": 8,
+  "log2K": 15270.0,
+  "e": 0.04025650835577219,
+  "log2m": 30540.0
+ },
+ {
+  "class": "<= 3 occurrences (m <= n), pathwidth DP 2^{n/3}",
+  "bar": 0.05555555555555555,
+  "lever": "x0 = 6",
+  "level": 8,
+  "log2K": 6078.0,
+  "e": 0.04496775961951438,
+  "log2m": 54702.0
+ },
+ {
+  "class": "<= 3 occurrences (m <= n), pathwidth DP 2^{n/3}",
+  "bar": 0.05555555555555555,
+  "lever": "rho = 0.6",
+  "level": 5,
+  "log2K": 1848.0,
+  "e": 0.0518470728413672,
+  "log2m": 16632.0
+ },
+ {
+  "class": "<= 3 occurrences (m <= n), pathwidth DP 2^{n/3}",
+  "bar": 0.05555555555555555,
+  "lever": "rho = 0.5",
+  "level": 4,
+  "log2K": 894.0,
+  "e": 0.04348851737631776,
+  "log2m": 8046.0
+ },
+ {
+  "class": "<= 3 occurrences (m <= n), pathwidth DP 2^{n/3}",
+  "bar": 0.05555555555555555,
+  "lever": "constant growth beta = 16",
+  "level": 8,
+  "log2K": 50.0,
+  "e": 0.04025661265954317,
+  "log2m": 450.0
+ },
+ {
+  "class": "<= 3 occurrences (m <= n), pathwidth DP 2^{n/3}",
+  "bar": 0.05555555555555555,
+  "lever": "constant growth beta = 16, x0 = 6, q = 2",
+  "level": 8,
+  "log2K": 38.0,
+  "e": 0.045394964023607355,
+  "log2m": 76.0
+ },
+ {
+  "class": "counting, Delta = 1, pathwidth DP 2^{0.52 n}",
+  "bar": 0.08666666666666667,
+  "lever": "baseline (40): rho = 1/sqrt2, x0 = 18, q = 9",
+  "level": 6,
+  "log2K": 3762.0,
+  "e": 0.08026343366262596,
+  "log2m": 33858.0
+ },
+ {
+  "class": "counting, Delta = 1, pathwidth DP 2^{0.52 n}",
+  "bar": 0.08666666666666667,
+  "lever": "q = 2 (top balancing g ~ K)",
+  "level": 6,
+  "log2K": 3762.0,
+  "e": 0.08026343366262596,
+  "log2m": 7524.0
+ },
+ {
+  "class": "counting, Delta = 1, pathwidth DP 2^{0.52 n}",
+  "bar": 0.08666666666666667,
+  "lever": "x0 = 6",
+  "level": 7,
+  "log2K": 3012.0,
+  "e": 0.06352821294019848,
+  "log2m": 27108.0
+ },
+ {
+  "class": "counting, Delta = 1, pathwidth DP 2^{0.52 n}",
+  "bar": 0.08666666666666667,
+  "lever": "rho = 0.6",
+  "level": 4,
+  "log2K": 894.0,
+  "e": 0.08557608412243715,
+  "log2m": 8046.0
+ },
+ {
+  "class": "counting, Delta = 1, pathwidth DP 2^{0.52 n}",
+  "bar": 0.08666666666666667,
+  "lever": "rho = 0.5",
+  "level": 3,
+  "log2K": 420.0,
+  "e": 0.08498519426211715,
+  "log2m": 3780.0
+ },
+ {
+  "class": "counting, Delta = 1, pathwidth DP 2^{0.52 n}",
+  "bar": 0.08666666666666667,
+  "lever": "constant growth beta = 16",
+  "level": 6,
+  "log2K": 42.0,
+  "e": 0.08026364162245579,
+  "log2m": 378.0
+ },
+ {
+  "class": "counting, Delta = 1, pathwidth DP 2^{0.52 n}",
+  "bar": 0.08666666666666667,
+  "lever": "constant growth beta = 16, x0 = 6, q = 2",
+  "level": 7,
+  "log2K": 34.0,
+  "e": 0.0641317458154931,
+  "log2m": 68.0
+ },
+ {
+  "class": "decision, Delta = 1, 2^{0.268 m}",
+  "bar": 0.04466666666666667,
+  "lever": "baseline (40): rho = 1/sqrt2, x0 = 18, q = 9",
+  "level": 8,
+  "log2K": 15270.0,
+  "e": 0.04025650835577219,
+  "log2m": 137430.0
+ },
+ {
+  "class": "decision, Delta = 1, 2^{0.268 m}",
+  "bar": 0.04466666666666667,
+  "lever": "q = 2 (top balancing g ~ K)",
+  "level": 8,
+  "log2K": 15270.0,
+  "e": 0.04025650835577219,
+  "log2m": 30540.0
+ },
+ {
+  "class": "decision, Delta = 1, 2^{0.268 m}",
+  "bar": 0.04466666666666667,
+  "lever": "x0 = 6",
+  "level": 9,
+  "log2K": 12216.0,
+  "e": 0.03181347544713276,
+  "log2m": 109944.0
+ },
+ {
+  "class": "decision, Delta = 1, 2^{0.268 m}",
+  "bar": 0.04466666666666667,
+  "lever": "rho = 0.6",
+  "level": 6,
+  "log2K": 3762.0,
+  "e": 0.03126013942603526,
+  "log2m": 33858.0
+ },
+ {
+  "class": "decision, Delta = 1, 2^{0.268 m}",
+  "bar": 0.04466666666666667,
+  "lever": "rho = 0.5",
+  "level": 4,
+  "log2K": 894.0,
+  "e": 0.04348851737631776,
+  "log2m": 8046.0
+ },
+ {
+  "class": "decision, Delta = 1, 2^{0.268 m}",
+  "bar": 0.04466666666666667,
+  "lever": "constant growth beta = 16",
+  "level": 8,
+  "log2K": 50.0,
+  "e": 0.04025661265954317,
+  "log2m": 450.0
+ },
+ {
+  "class": "decision, Delta = 1, 2^{0.268 m}",
+  "bar": 0.04466666666666667,
+  "lever": "constant growth beta = 16, x0 = 6, q = 2",
+  "level": 9,
+  "log2K": 42.0,
+  "e": 0.032115711036058925,
+  "log2m": 84.0
+ },
+ {
+  "class": "counting, Delta = 4.26, Kutzkov 2^{0.716 n}",
+  "bar": 0.028012519561815337,
+  "lever": "baseline (40): rho = 1/sqrt2, x0 = 18, q = 9",
+  "level": 10,
+  "log2K": 61338.0,
+  "e": 0.02014389352587977,
+  "log2m": 552042.0
+ },
+ {
+  "class": "counting, Delta = 4.26, Kutzkov 2^{0.716 n}",
+  "bar": 0.028012519561815337,
+  "lever": "q = 2 (top balancing g ~ K)",
+  "level": 10,
+  "log2K": 61338.0,
+  "e": 0.02014389352587977,
+  "log2m": 122676.0
+ },
+ {
+  "class": "counting, Delta = 4.26, Kutzkov 2^{0.716 n}",
+  "bar": 0.028012519561815337,
+  "lever": "x0 = 6",
+  "level": 10,
+  "log2K": 24498.0,
+  "e": 0.022501349443113623,
+  "log2m": 220482.0
+ },
+ {
+  "class": "counting, Delta = 4.26, Kutzkov 2^{0.716 n}",
+  "bar": 0.028012519561815337,
+  "lever": "rho = 0.6",
+  "level": 7,
+  "log2K": 7596.0,
+  "e": 0.018801874875483512,
+  "log2m": 68364.0
+ },
+ {
+  "class": "counting, Delta = 4.26, Kutzkov 2^{0.716 n}",
+  "bar": 0.028012519561815337,
+  "lever": "rho = 0.5",
+  "level": 5,
+  "log2K": 1848.0,
+  "e": 0.02199907421966074,
+  "log2m": 16632.0
+ },
+ {
+  "class": "counting, Delta = 4.26, Kutzkov 2^{0.716 n}",
+  "bar": 0.028012519561815337,
+  "lever": "constant growth beta = 16",
+  "level": 10,
+  "log2K": 58.0,
+  "e": 0.020143945718288533,
+  "log2m": 522.0
+ },
+ {
+  "class": "counting, Delta = 4.26, Kutzkov 2^{0.716 n}",
+  "bar": 0.028012519561815337,
+  "lever": "constant growth beta = 16, x0 = 6, q = 2",
+  "level": 10,
+  "log2K": 46.0,
+  "e": 0.022715117619230528,
+  "log2m": 92.0
+ }
+]

@@ -1,0 +1,18 @@
+m = 2: strings 4, equalities 2, crossing Q 0 (expected 0); pairing pairs crossing Q per merge [0, 0]; Q = group split on every crossed bundle: True; groups met per merge: 2
+m = 3: strings 12, equalities 6, crossing Q 6 (expected 6); pairing pairs crossing Q per merge [0, 0, 0]; Q = group split on every crossed bundle: True; groups met per merge: 3
+m = 4: strings 24, equalities 12, crossing Q 8 (expected 8); pairing pairs crossing Q per merge [0, 0, 0, 0]; Q = group split on every crossed bundle: True; groups met per merge: 4
+m = 5: strings 40, equalities 20, crossing Q 20 (expected 20); pairing pairs crossing Q per merge [0, 0, 0, 0, 0]; Q = group split on every crossed bundle: True; groups met per merge: 5
+m = 6: strings 60, equalities 30, crossing Q 24 (expected 24); pairing pairs crossing Q per merge [0, 0, 0, 0, 0, 0]; Q = group split on every crossed bundle: True; groups met per merge: 6
+m = 7: strings 84, equalities 42, crossing Q 42 (expected 42); pairing pairs crossing Q per merge [0, 0, 0, 0, 0, 0, 0]; Q = group split on every crossed bundle: True; groups met per merge: 7
+m = 3 exhaustive over 2047 string cuts: max gap e - max_k p_k = 6 (e = 6, p = 0), attained by 1 cut(s) up to complement; one of them: [('X', 0, 1), ('X', 1, 2), ('X', 2, 0), ('Y', 0, 1), ('Y', 1, 2), ('Y', 2, 0)]
+m = 3, N = 2: rank of f across Q = 64 (N^6 = 64)
+m = 3, N = 3: rank of f across Q = 729 (N^6 = 729)
+m = 3, merge 0, random local piece 0: factor ranks [np.int64(2), np.int64(3), np.int64(1)], product 6, rank across Q 6
+m = 3, merge 0, random local piece 1: factor ranks [np.int64(3), np.int64(4), np.int64(1)], product 12, rank across Q 12
+m = 3, merge 0, random local piece 2: factor ranks [np.int64(1), np.int64(2), np.int64(1)], product 2, rank across Q 2
+m = 3, merge 1, random local piece 0: factor ranks [np.int64(2), np.int64(4), np.int64(1)], product 8, rank across Q 8
+m = 3, merge 1, random local piece 1: factor ranks [np.int64(3), np.int64(1), np.int64(4)], product 12, rank across Q 12
+m = 3, merge 1, random local piece 2: factor ranks [np.int64(3), np.int64(2), np.int64(3)], product 18, rank across Q 18
+m = 3, merge 2, random local piece 0: factor ranks [np.int64(4), np.int64(1), np.int64(2)], product 8, rank across Q 8
+m = 3, merge 2, random local piece 1: factor ranks [np.int64(1), np.int64(1), np.int64(2)], product 2, rank across Q 2
+m = 3, merge 2, random local piece 2: factor ranks [np.int64(1), np.int64(3), np.int64(1)], product 3, rank across Q 3

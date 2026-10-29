@@ -1,0 +1,15 @@
+# Literature values read by the scripts (through calc/r122d_values.py). One entry per quantity.
+# value:  the value used (an upper bound for omega and omega(1,k,1), a lower bound for alpha)
+# source: where it is established (the references cited in the paper)
+
+omega_now:
+  value: "2.25"
+  source: "omega <= 9/4: value at k = 1 of omega_rect_curve below (Amanov, van den Berg, Zuiddam, arXiv:2610.30054; Uznanski, arXiv:2610.10494); also OpenAI, https://github.com/openai/math (item 107). Preprints, not peer-reviewed."
+
+alpha_now:
+  value: "0.5"
+  source: "alpha >= 1/2, i.e. omega(1,k,1) = 2 for k <= 1/2: Amanov, van den Berg, Zuiddam, arXiv:2610.30054, Thm 1.2 / Cor. 4.17; Uznanski, arXiv:2610.10494, Cor. 1.2. Preprints, not peer-reviewed."
+
+omega_rect_curve:
+  value: "1 + k + 1/(4k)"
+  source: "omega(1,k,1) <= 1 + k + 1/(4k) for 1/2 <= k <= 1: Amanov, van den Berg, Zuiddam, arXiv:2610.30054, Thm 1.2 / Cor. 4.17; Uznanski, arXiv:2610.10494, Cor. 1.2. Preprints, not peer-reviewed."

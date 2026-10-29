@@ -1,0 +1,16 @@
+m=64: h=417, rho_bar_m = 1.5453 (limit sqrt 2 = 1.4142), log2(4h+1)/m = 0.1673
+   [om2] K=9: certified <= max(top 16.1811, tables 16.3000) + 9 x entropy = 17.8054 (width bound 18: below); K=16: certified <= 67.1078 (width bound 60: not below)
+   [current] K=9: certified <= max(top 18.2037, tables 16.9074) + 9 x entropy = 19.7090 (width bound 18: not below); K=16: certified <= 69.1078 (width bound 60: not below)
+   [vxxz] K=9: certified <= max(top 19.1871, tables 17.6488) + 9 x entropy = 20.6925 (width bound 18: not below); K=16: certified <= 70.0802 (width bound 60: not below)
+m=128: h=1459, rho_bar_m = 1.4923 (limit sqrt 2 = 1.4142), log2(4h+1)/m = 0.0977
+   [om2] K=9: certified <= max(top 15.9691, tables 16.1000) + 9 x entropy = 16.9797 (width bound 18: below); K=16: certified <= 63.3336 (width bound 60: not below)
+   [current] K=9: certified <= max(top 17.9653, tables 16.7667) + 9 x entropy = 18.8450 (width bound 18: not below); K=16: certified <= 65.3336 (width bound 60: not below)
+   [vxxz] K=9: certified <= max(top 18.9358, tables 17.5452) + 9 x entropy = 19.8155 (width bound 18: not below); K=16: certified <= 66.3060 (width bound 60: not below)
+m=256: h=5371, rho_bar_m = 1.4598 (limit sqrt 2 = 1.4142), log2(4h+1)/m = 0.0562
+   [om2] K=9: certified <= max(top 15.8392, tables 15.9500) + 9 x entropy = 16.4559 (width bound 18: below); K=16: certified <= 61.0591 (width bound 60: not below)
+   [current] K=9: certified <= max(top 17.8191, tables 16.6334) + 9 x entropy = 18.3251 (width bound 18: not below); K=16: certified <= 63.0591 (width bound 60: not below)
+   [vxxz] K=9: certified <= max(top 18.7818, tables 17.4366) + 9 x entropy = 19.2877 (width bound 18: not below); K=16: certified <= 64.0315 (width bound 60: not below)
+m=512: h=20444, rho_bar_m = 1.4404 (limit sqrt 2 = 1.4142), log2(4h+1)/m = 0.0319
+   [om2] K=9: certified <= max(top 15.7617, tables 15.9000) + 9 x entropy = 16.1869 (width bound 18: below); K=16: certified <= 59.7175 (width bound 60: below)
+   [current] K=9: certified <= max(top 17.7319, tables 16.6004) + 9 x entropy = 18.0188 (width bound 18: not below); K=16: certified <= 61.7175 (width bound 60: not below)
+   [vxxz] K=9: certified <= max(top 18.6898, tables 17.4231) + 9 x entropy = 18.9767 (width bound 18: not below); K=16: certified <= 62.6899 (width bound 60: not below)

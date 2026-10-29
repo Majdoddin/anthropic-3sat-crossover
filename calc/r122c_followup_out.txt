@@ -1,0 +1,26 @@
+(1) E at omega = 2, zeta = 1/2 (worst term):
+   gamma=1, G factor allowed: table cost 3.4679 with bypassed P-blocks 0.000, fused Pperp 0.000, bypassed Pperp 0.000, G-factor Pperp 0.500; total E = 3.8012
+   no octonion factor (gamma=9), G factor allowed: table cost 3.4846 with bypassed P-blocks 0.500, fused Pperp 0.260, bypassed Pperp 0.000, G-factor Pperp 0.240; total E = 3.8179
+   gamma=1, G factor forbidden: table cost 3.4692 with bypassed P-blocks 0.000, fused Pperp 0.020, bypassed Pperp 0.480, G-factor Pperp 0.000; total E = 3.8025
+   no octonion factor, no G factor: table cost 3.4846 with bypassed P-blocks 0.500, fused Pperp 0.260, bypassed Pperp 0.240, G-factor Pperp 0.000; total E = 3.8179
+   hand formula (all P bypassed, f = 1/4, G factor 1/4): 1/3 + 2 + 1/2 + 1/2 + (1/4) L56 + ... = 3.8173
+(2) alpha thresholds (chord model), bisection:
+   V without octonion factor: gain iff alpha > 0.5097;  V with gamma = 1: alpha > 0.5000
+   B (limit m -> inf, worst type u = 0): gain iff alpha > 0.5004; B at alpha = 0.501: 3.99918 (2-point mixtures on an 11-point grid)
+(3) adversarial random mixtures for B:
+   om2: worst random mixture 3.5466 at u=[-0.    0.01], w=[0.75 0.25]; pure u=0 3.5475
+   today: worst random mixture 4.0786 at u=[-0.07 -0.03], w=[0.06 0.94]; pure u=0 4.0802
+(4) B at finite m (exact partition numbers):
+   m=64 (h=417): om2: max cost 3.6289 + entropy bound 0.1673 = 3.7962
+   m=64 (h=417): today: max cost 4.0860 + entropy bound 0.1673 = 4.2533
+   m=256 (h=5371): om2: max cost 3.5743 + entropy bound 0.0562 = 3.6305
+   m=256 (h=5371): today: max cost 4.0836 + entropy bound 0.0562 = 4.1398
+(5) V today at the worst point, no octonion factor:
+   d=0.85: cover 0.0564, table C(d) 4.0257, derivation 3+d+g 3.8821, total 4.0821; per-Q contraction H(a)/3+3+a = 3.8333
+   d=0.9: cover 0.0360, table C(d) 4.0435, derivation 3+d+g 3.9321, total 4.0795; per-Q contraction H(a)/3+3+a = 3.8333
+   d=0.921: cover 0.0280, table C(d) 4.0510, derivation 3+d+g 3.9531, total 4.0790; per-Q contraction H(a)/3+3+a = 3.8333
+   d=0.95: cover 0.0173, table C(d) 4.0631, derivation 3+d+g 3.9821, total 4.0804; per-Q contraction H(a)/3+3+a = 3.8333
+   d=1.0: cover 0.0000, table C(d) 4.0860, derivation 3+d+g 4.0321, total 4.0860; per-Q contraction H(a)/3+3+a = 3.8333
+   a=0.3: V 4.0486 at d=0.773;  U(gamma = Alman-Li) at this a: 4.2436
+   a=0.4: V 4.0665 at d=0.846;  U(gamma = Alman-Li) at this a: 4.2773
+   a=0.45: V 4.0739 at d=0.858;  U(gamma = Alman-Li) at this a: 4.2866

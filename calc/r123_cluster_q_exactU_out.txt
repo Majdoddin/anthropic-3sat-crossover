@@ -1,0 +1,41 @@
+theta = 2, k = 3, nu = 0.001; f = recursion target / bar; m* from (T1); C0max from (T2)
+
+== density 1.0, brute force base: bar (exact U) 0.1321
+  best: f 0.998, x0 10, levels 4, log2 K = 801, e = 0.13179; top zeta = 0.0001294 (log2 -12.92), eps = 0.25, log2 s = 35.0
+  log2 m* = 1685, q = log2 m*/log2 K = 2.1038; log2 C0max = 61.6
+  (crude 2 log2 K at f = 0.999: 1599)
+
+== density 1.0, tree, VXXZ curve base: bar (exact U) 0.1321
+  best: f 0.998, x0 11, levels 2, log2 K = 173, e = 0.13161; top zeta = 0.0003819 (log2 -11.35), eps = 0.25, log2 s = 29.7
+  log2 m* = 417, q = log2 m*/log2 K = 2.4083; log2 C0max = 51.1
+  (crude 2 log2 K at f = 0.999: 342)
+
+== density 2.0, brute force base: bar (exact U) 0.0711
+  best: f 0.998, x0 8, levels 6, log2 K = 2986, e = 0.07095; top zeta = 0.0002096 (log2 -12.22), eps = 0.25, log2 s = 35.5
+  log2 m* = 6059, q = log2 m*/log2 K = 2.0288; log2 C0max = 61.6
+  (crude 2 log2 K at f = 0.999: 5969)
+
+== density 2.0, tree, VXXZ curve base: bar (exact U) 0.0711
+  best: f 0.998, x0 9, levels 4, log2 K = 737, e = 0.07092; top zeta = 0.0002996 (log2 -11.70), eps = 0.25, log2 s = 32.4
+  log2 m* = 1551, q = log2 m*/log2 K = 2.1058; log2 C0max = 55.6
+  (crude 2 log2 K at f = 0.999: 1472)
+
+== density 3.0, brute force base: bar (exact U) 0.0444
+  best: f 0.998, x0 12, levels 7, log2 K = 9842, e = 0.04435; top zeta = 0.0002167 (log2 -12.17), eps = 0.25, log2 s = 37.1
+  log2 m* = 19775, q = log2 m*/log2 K = 2.0092; log2 C0max = 64.2
+  (crude 2 log2 K at f = 0.999: 18892)
+
+== density 3.0, tree, VXXZ curve base: bar (exact U) 0.0444
+  best: f 0.998, x0 8, levels 6, log2 K = 2571, e = 0.04434; top zeta = 0.0002443 (log2 -12.00), eps = 0.25, log2 s = 34.8
+  log2 m* = 5227, q = log2 m*/log2 K = 2.0328; log2 C0max = 59.6
+  (crude 2 log2 K at f = 0.999: 5141)
+
+== density 4.26, brute force base: bar (exact U) 0.0302
+  best: f 0.998, x0 7, levels 9, log2 K = 20726, e = 0.03011; top zeta = 0.0002633 (log2 -11.89), eps = 0.25, log2 s = 37.6
+  log2 m* = 41546, q = log2 m*/log2 K = 2.0045; log2 C0max = 64.6
+  (crude 2 log2 K at f = 0.999: 41425)
+
+== density 4.26, tree, VXXZ curve base: bar (exact U) 0.0302
+  best: f 0.999, x0 8, levels 7, log2 K = 5336, e = 0.03014; top zeta = 7.609e-05 (log2 -13.68), eps = 0.25, log2 s = 39.2
+  log2 m* = 10766, q = log2 m*/log2 K = 2.0177; log2 C0max = 67.9
+  (crude 2 log2 K at f = 0.999: 10672)

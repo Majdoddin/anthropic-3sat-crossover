@@ -1,0 +1,3 @@
+{'gap': 6, 'e': 6, 'p': (0, 0, 0), 'Q': [0, 3, 4, 6, 9, 10]}
+N = 2: total number of local product terms >= N^e / max_k N^p_k / 1 = 64 (sum over the three merges)
+N = 8: total number of local product terms >= N^e / max_k N^p_k / 1 = 262144 (sum over the three merges)

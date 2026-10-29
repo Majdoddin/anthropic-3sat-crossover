@@ -1,0 +1,16 @@
+(1) M0 = 1.5 h: bound at M0 = 0.625000, nondecreasing in M: True
+(1) M0 = 2.0 h: bound at M0 = 0.666667, nondecreasing in M: True
+(2) M0 = 1.5 h: 16626 admissible random concave profiles, min of f(M)/(2 lambda) - bound = 1.417e-04
+    kinked profile (slope after h = 0.5000 lambda/h): f(M)/(2 lambda) = 0.625000
+(2) M0 = 2.0 h: 17867 admissible random concave profiles, min of f(M)/(2 lambda) - bound = 8.978e-04
+    kinked profile (slope after h = 0.3333 lambda/h): f(M)/(2 lambda) = 0.666667
+(3) power profiles, M0 = 1.5 h: min rho = 0.6458 at alpha = 0.6309; rho(1/2) = 0.7071; rho(1/3) = 0.7937; log formula max(2^(a-1), 2^-a) at the same alpha = 0.7743
+(3) power profiles, M0 = 2.0 h: min rho = 0.7071 at alpha = 0.5000; rho(1/2) = 0.7071; rho(1/3) = 0.7937; log formula max(2^(a-1), 2^-a) at the same alpha = 0.7071
+    alpha = log_3 2 = 0.6309: 2^(-alpha) = 0.6458
+(4) fermions n = 2000, M0 = 1.5 h: least counted rho = 0.6606 at h/n = 0.0760, M/h = 1.500
+(4) fermions n = 2000, M0 = 2.0 h: least counted rho = 0.7633 at h/n = 0.1080, M/h = 2.000
+    at h/n = 0.075, M = 1.5 h: F(3h) - 2 lambda = 5.36, F(1.5h)/(2 lambda) = 0.6610
+(5) partitions h = 100: log2 p(2h)/(2 log2 p(h)) = 0.7608; log2 p(4h) - 2 log2 p(h) = 7.53
+(5) partitions h = 500: log2 p(2h)/(2 log2 p(h)) = 0.7345; log2 p(4h) - 2 log2 p(h) = 9.80
+(5) partitions h = 1000: log2 p(2h)/(2 log2 p(h)) = 0.7277; log2 p(4h) - 2 log2 p(h) = 10.79
+(5) partitions h = 2000: log2 p(2h)/(2 log2 p(h)) = 0.7226; log2 p(4h) - 2 log2 p(h) = 11.78

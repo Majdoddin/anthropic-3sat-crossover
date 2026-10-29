@@ -1,0 +1,30 @@
+
+== density 1.0: bar e < 0.0881 (clause competitor 0.5283 m)
+  paper: schedule 2^{-l-5}, tau 1, x0 18                     x0 18: levels 6, log2 K =     3762; log2 m* >=     33858 (q = 9),     7524 (q = 2)
+  free slack schedule (DP), tau 1, x0 18                     x0 18: levels 6, log2 K =     3196; log2 m* >=     28761 (q = 9),     6391 (q = 2)
+  free schedule, tau 1, best x0                              x0  7: levels 6, log2 K =     2474; log2 m* >=     22264 (q = 9),     4948 (q = 2)
+  free schedule, tau 9, best x0, rho = 1/2 (ideal pieces)    x0  7: levels 3, log2 K =      232; log2 m* >=      2091 (q = 9),      465 (q = 2)
+
+== density 1.35: bar e < 0.0878 (variable competitor 0.711 n)
+  paper: schedule 2^{-l-5}, tau 1, x0 18                     x0 18: levels 6, log2 K =     3762; log2 m* >=     33858 (q = 9),     7524 (q = 2)
+  free slack schedule (DP), tau 1, x0 18                     x0 18: levels 6, log2 K =     3198; log2 m* >=     28780 (q = 9),     6395 (q = 2)
+  free schedule, tau 1, best x0                              x0  7: levels 6, log2 K =     2480; log2 m* >=     22319 (q = 9),     4960 (q = 2)
+  free schedule, tau 9, best x0, rho = 1/2 (ideal pieces)    x0  7: levels 3, log2 K =      232; log2 m* >=      2091 (q = 9),      465 (q = 2)
+
+== density 2.0: bar e < 0.0592 (variable competitor 0.711 n)
+  paper: schedule 2^{-l-5}, tau 1, x0 18                     x0 18: levels 7, log2 K =     7596; log2 m* >=     68364 (q = 9),    15192 (q = 2)
+  free slack schedule (DP), tau 1, x0 18                     x0 18: levels 7, log2 K =     6590; log2 m* >=     59309 (q = 9),    13180 (q = 2)
+  free schedule, tau 1, best x0                              x0  7: levels 7, log2 K =     5177; log2 m* >=     46597 (q = 9),    10355 (q = 2)
+  free schedule, tau 9, best x0, rho = 1/2 (ideal pieces)    x0  6: levels 4, log2 K =      427; log2 m* >=      3842 (q = 9),      854 (q = 2)
+
+== density 3.0: bar e < 0.0395 (variable competitor 0.711 n)
+  paper: schedule 2^{-l-5}, tau 1, x0 18                     x0 18: levels 9, log2 K =    30624; log2 m* >=    275616 (q = 9),    61248 (q = 2)
+  free slack schedule (DP), tau 1, x0 18                     x0 18: levels 8, log2 K =    13612; log2 m* >=    122506 (q = 9),    27224 (q = 2)
+  free schedule, tau 1, best x0                              x0  7: levels 8, log2 K =    10916; log2 m* >=     98247 (q = 9),    21833 (q = 2)
+  free schedule, tau 9, best x0, rho = 1/2 (ideal pieces)    x0  8: levels 4, log2 K =      562; log2 m* >=      5059 (q = 9),     1124 (q = 2)
+
+== density 4.26: bar e < 0.0278 (variable competitor 0.711 n)
+  paper: schedule 2^{-l-5}, tau 1, x0 18                     x0 18: levels 10, log2 K =    61338; log2 m* >=    552042 (q = 9),   122676 (q = 2)
+  free slack schedule (DP), tau 1, x0 18                     x0 18: levels 9, log2 K =    27373; log2 m* >=    246356 (q = 9),    54746 (q = 2)
+  free schedule, tau 1, best x0                              x0  7: levels 9, log2 K =    21996; log2 m* >=    197966 (q = 9),    43992 (q = 2)
+  free schedule, tau 9, best x0, rho = 1/2 (ideal pieces)    x0  6: levels 5, log2 K =      935; log2 m* >=      8411 (q = 9),     1869 (q = 2)

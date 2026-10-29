@@ -1,0 +1,52 @@
+R123 OpenAI App. D threshold (main term).  lam = ceil(log2 s), s = n+m, k = 3
+
+[as written (eps=2^-17, 6M/D modes, p_t=8*(3M/u)*D, child 3M/32)]
+  per-root-wire constant Cw = 18534.8 bits (depth-0 only: 16077.4; G = 1.1528)
+  density 1.0: M0/s = 3.000, bar/s = 0.26415, coef = 55605.3/sqrt(lam)  ->  log2 s* >= 4.431e+10  (depth-0 only 3.334e+10)
+  density 4.26: M0/s = 8.578, bar/s = 0.13517, coef = 158991.1/sqrt(lam)  ->  log2 s* >= 1.383e+12  (depth-0 only 1.041e+12)
+
+[as written, paper's own child bound M/8]
+  per-root-wire constant Cw = 19529.8 bits (depth-0 only: 16077.4; G = 1.2147)
+  density 1.0: M0/s = 3.000, bar/s = 0.26415, coef = 58590.3/sqrt(lam)  ->  log2 s* >= 4.920e+10  (depth-0 only 3.334e+10)
+  density 4.26: M0/s = 8.578, bar/s = 0.13517, coef = 167526.4/sqrt(lam)  ->  log2 s* >= 1.536e+12  (depth-0 only 1.041e+12)
+
+[written constants, network km wires]
+  per-root-wire constant Cw = 18534.8 bits (depth-0 only: 16077.4; G = 1.1528)
+  density 1.0: M0/s = 1.500, bar/s = 0.26415, coef = 27803.1/sqrt(lam)  ->  log2 s* >= 1.108e+10  (depth-0 only 8.336e+09)
+  density 4.26: M0/s = 2.430, bar/s = 0.13517, coef = 45034.1/sqrt(lam)  ->  log2 s* >= 1.110e+11  (depth-0 only 8.352e+10)
+
+[eps=1/960 only (Delta=s^0.9 kept)]
+  per-root-wire constant Cw = 1586.2 bits (depth-0 only: 1375.9; G = 1.1528)
+  density 1.0: M0/s = 3.000, bar/s = 0.26415, coef = 4759.7/sqrt(lam)  ->  log2 s* >= 3.247e+08  (depth-0 only 2.443e+08)
+  density 4.26: M0/s = 8.578, bar/s = 0.13517, coef = 13607.6/sqrt(lam)  ->  log2 s* >= 1.013e+10  (depth-0 only 7.625e+09)
+
+[tweak: eps=1/100 (Delta=2L), v=2, pc=6, child M/32, km wires]
+  per-root-wire constant Cw = 134.1 bits (depth-0 only: 128.2; G = 1.0462)
+  density 1.0: M0/s = 1.500, bar/s = 0.26415, coef = 202.2/sqrt(lam)  ->  log2 s* >= 5.859e+05  (depth-0 only 5.355e+05)
+  density 4.26: M0/s = 2.430, bar/s = 0.13517, coef = 326.9/sqrt(lam)  ->  log2 s* >= 5.848e+06  (depth-0 only 5.344e+06)
+
+tweak, optimising r (rho = 2/r, eps = 1/(4(4 log2 r + 1)) for halving) and gamma:
+  r=   4: eps(halving)=0.02778, Cw(gamma=2)=262.6
+  r=   8: eps(halving)=0.01923, Cw(gamma=2)=143.0
+  r=  16: eps(halving)=0.01471, Cw(gamma=2)=128.4
+  r=  32: eps(halving)=0.01190, Cw(gamma=2)=128.9
+  r=  64: eps(halving)=0.01000, Cw(gamma=2)=134.1
+  r= 128: eps(halving)=0.00862, Cw(gamma=2)=141.2
+  r= 256: eps(halving)=0.00758, Cw(gamma=2)=148.9
+  best: r=64, gamma=12, eps=0.01833, Cw=106.2
+  density 1.0: log2 s* >= 3.681e+05
+  density 4.26: log2 s* >= 3.670e+06
+
+literal (D.5) condition u >= lam^{4/5} at the deepest active depth (2^d < (C sqrt lam)^{1/3}):
+  C = 3.0: needs lam >= (C^(1/3)/eps)^30 = 2^525.8
+  C = 8.578: needs lam >= (C^(1/3)/eps)^30 = 2^541.0
+  even depth 0 (u0 = eps*lam >= lam^0.8) needs lam >= eps^-5 = 2^85
+
+depth profile, as written, density 1, lam = 4.430e+10:
+  d=0: M/s=3.000e+00, u=3.380e+05, bits/s * 1/sqrt(lam)-scaled contribution = 48232.1, inherited-precision ratio ~ (32/3)(1/2)/2^u = 2^-337982
+  d=1: M/s=2.812e-01, u=1.690e+05, bits/s * 1/sqrt(lam)-scaled contribution = 6394.7, inherited-precision ratio ~ (32/3)(1/2)/2^u = 2^-168991
+  d=2: M/s=2.637e-02, u=8.450e+04, bits/s * 1/sqrt(lam)-scaled contribution = 847.8, inherited-precision ratio ~ (32/3)(1/2)/2^u = 2^-84496
+  d=3: M/s=2.472e-03, u=4.225e+04, bits/s * 1/sqrt(lam)-scaled contribution = 112.4, inherited-precision ratio ~ (32/3)(1/2)/2^u = 2^-42248
+  d=4: M/s=2.317e-04, u=2.112e+04, bits/s * 1/sqrt(lam)-scaled contribution = 14.9, inherited-precision ratio ~ (32/3)(1/2)/2^u = 2^-21124
+  d=5: M/s=2.173e-05, u=1.056e+04, bits/s * 1/sqrt(lam)-scaled contribution = 2.0, inherited-precision ratio ~ (32/3)(1/2)/2^u = 2^-10562
+  leaf wires <= H = s/210475

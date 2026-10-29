@@ -1,0 +1,34 @@
+rho_bar: {'G': 1.83333, 'E': 1.80123, 'EM': 1.81728, 'B': 1.41421}
+
+== [om2] w(1) = 2.0000, w(4/5) = 2.0000
+  K=9 G : certified Phi <= max(top (5+2 rho_bar) w(1) = 17.3333, tables (cap 17.3333) 17.7205) = 17.7205 (e <= 0.4922); width bound 18; worst table cell ((np.float64(0.03333333333333333), np.float64(0.4)), (np.float64(0.3), np.float64(0.4666666666666667)))
+  K=9 EM: certified Phi <= max(top (5+2 rho_bar) w(1) = 17.2691, tables (cap 17.2691) 17.6563) = 17.6563 (e <= 0.4905); width bound 18; worst table cell ((np.float64(0.0), np.float64(0.26666666666666666)), (np.float64(0.6666666666666666), np.float64(0.2)))
+  K=9 E : certified Phi <= max(top (5+2 rho_bar) w(1) = 17.2049, tables (cap 17.2049) 17.5921) = 17.5921 (e <= 0.4887); width bound 18; worst table cell ((np.float64(0.0), np.float64(0.26666666666666666)), (np.float64(0.5666666666666667), np.float64(0.3)))
+  K=9 B : certified Phi <= max(top (5+2 rho_bar) w(1) = 15.6569, tables (cap 15.6569) 15.7250) = 15.7250 (e <= 0.4368); width bound 18; worst table cell (np.float64(0.925), np.float64(1.9500000000000002))
+  K=16 merge excess: X_B = 8 (w(1) - 1) = 8.0000 (grid h=0.25 + margin: 8.7500); X_GE = 20 (w(4/5) - 2)^+ = 0.0000 (grid: 0.7500)
+  K=16 B : certified Phi <= max(16 + 24 sqrt2 + X_B, tables) = max(57.9411, 48.0000) (e <= 0.4828); width bound 60
+  K=16 G : certified Phi <= max(16 + 24 rho_bar + X_GE = 60.0000, tables 54.0000) = 60.0000 (e <= 0.5000); width bound 60
+  K=16 EM: certified Phi <= max(16 + 24 rho_bar + X_GE = 59.6147, tables 54.0000) = 59.6147 (e <= 0.4968); width bound 60
+  K=16 E : certified Phi <= max(16 + 24 rho_bar + X_GE = 59.2294, tables 54.0000) = 59.2294 (e <= 0.4936); width bound 60
+
+== [current] w(1) = 2.2500, w(4/5) = 2.1125
+  K=9 G : certified Phi <= max(top (5+2 rho_bar) w(1) = 19.5000, tables (cap 17.3333) 17.9858) = 19.5000 (e <= 0.5417); width bound 18; worst table cell ((np.float64(0.9), np.float64(0.0)), (np.float64(0.03333333333333333), np.float64(0.4666666666666667)))
+  K=9 EM: certified Phi <= max(top (5+2 rho_bar) w(1) = 19.4278, tables (cap 17.2691) 17.9373) = 19.4278 (e <= 0.5397); width bound 18; worst table cell ((np.float64(0.5666666666666667), np.float64(0.26666666666666666)), (np.float64(0.0), np.float64(0.5)))
+  K=9 E : certified Phi <= max(top (5+2 rho_bar) w(1) = 19.3555, tables (cap 17.2049) 17.9026) = 19.3555 (e <= 0.5377); width bound 18; worst table cell ((np.float64(0.9), np.float64(0.0)), (np.float64(0.0), np.float64(0.4666666666666667)))
+  K=9 B : certified Phi <= max(top (5+2 rho_bar) w(1) = 17.6140, tables (cap 15.6569) 16.4776) = 17.6140 (e <= 0.4893); width bound 18; worst table cell (np.float64(1.975), np.float64(1.425))
+  K=16 merge excess: X_B = 8 (w(1) - 1) = 10.0000 (grid h=0.25 + margin: 10.7500); X_GE = 20 (w(4/5) - 2)^+ = 2.2500 (grid: 3.0000)
+  K=16 B : certified Phi <= max(16 + 24 sqrt2 + X_B, tables) = max(59.9411, 48.0000) (e <= 0.4995); width bound 60
+  K=16 G : certified Phi <= max(16 + 24 rho_bar + X_GE = 62.2500, tables 54.0000) = 62.2500 (e <= 0.5188); width bound 60
+  K=16 EM: certified Phi <= max(16 + 24 rho_bar + X_GE = 61.8647, tables 54.0000) = 61.8647 (e <= 0.5155); width bound 60
+  K=16 E : certified Phi <= max(16 + 24 rho_bar + X_GE = 61.4794, tables 54.0000) = 61.4794 (e <= 0.5123); width bound 60
+
+== [vxxz] w(1) = 2.3716, w(4/5) = 2.2209
+  K=9 G : certified Phi <= max(top (5+2 rho_bar) w(1) = 20.5535, tables (cap 17.3333) 18.4751) = 20.5535 (e <= 0.5709); width bound 18; worst table cell ((np.float64(0.9), np.float64(0.0)), (np.float64(0.0), np.float64(0.5)))
+  K=9 EM: certified Phi <= max(top (5+2 rho_bar) w(1) = 20.4773, tables (cap 17.2691) 18.4267) = 20.4773 (e <= 0.5688); width bound 18; worst table cell ((np.float64(0.8), np.float64(0.0)), (np.float64(0.0), np.float64(0.5)))
+  K=9 E : certified Phi <= max(top (5+2 rho_bar) w(1) = 20.4012, tables (cap 17.2049) 18.4194) = 20.4012 (e <= 0.5667); width bound 18; worst table cell ((np.float64(0.9), np.float64(0.0)), (np.float64(0.03333333333333333), np.float64(0.43333333333333335)))
+  K=9 B : certified Phi <= max(top (5+2 rho_bar) w(1) = 18.5655, tables (cap 15.6569) 17.2983) = 18.5655 (e <= 0.5157); width bound 18; worst table cell (np.float64(1.975), np.float64(1.425))
+  K=16 merge excess: X_B = 8 (w(1) - 1) = 10.9724 (grid h=0.25 + margin: 11.7224); X_GE = 20 (w(4/5) - 2)^+ = 4.4186 (grid: 5.1686)
+  K=16 B : certified Phi <= max(16 + 24 sqrt2 + X_B, tables) = max(60.9135, 48.0000) (e <= 0.5076); width bound 60
+  K=16 G : certified Phi <= max(16 + 24 rho_bar + X_GE = 64.4186, tables 54.0000) = 64.4186 (e <= 0.5368); width bound 60
+  K=16 EM: certified Phi <= max(16 + 24 rho_bar + X_GE = 64.0333, tables 54.0000) = 64.0333 (e <= 0.5336); width bound 60
+  K=16 E : certified Phi <= max(16 + 24 rho_bar + X_GE = 63.6480, tables 54.0000) = 63.6480 (e <= 0.5304); width bound 60

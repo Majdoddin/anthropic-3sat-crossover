@@ -1,0 +1,21 @@
+(1) Sturmian row/column sums: tested 12225 cases, failures 0
+(2) per-level step f(K) <= max(Pa,Pb) log2 K/(1-ebar): tested 400 random (a,b,f(a),f(b)), failures 0 max ratio f(K)/bound = 0.962131
+    grid 2x2: ebar = 1.0000, eps = 0.6667, rounded-mixing bound f(K) <= 6.000 vs log2 K = 2.000, input floor K/2 = 2
+    grid 2x3: ebar = 0.7222, eps = 0.5333, rounded-mixing bound f(K) <= 5.540 vs log2 K = 2.585, input floor K/2 = 3
+    grid 2x10: ebar = 0.5200, eps = 0.4842, rounded-mixing bound f(K) <= 8.381 vs log2 K = 4.322, input floor K/2 = 10
+    grid 3x3: ebar = 0.4444, eps = 0.3333, rounded-mixing bound f(K) <= 4.755 vs log2 K = 3.170, input floor K/2 = 4.5
+    grid 3x100: ebar = 0.2224, eps = 0.2209, rounded-mixing bound f(K) <= 10.562 vs log2 K = 8.229, input floor K/2 = 150
+(3) recursion of (40): ebar_l = 4/g_l^2 and exact eps_l = 4/(g_l(g_l+1)); Pi_L = prod_{l<L} 1/(1-ebar_l)
+  x0 = 18: log2 K_0..K_4 = [18, 72, 186, 420, 894]; log2 g_0 = 36; sum_l ebar_l = 8.470e-22; Pi_inf - 1 = 8.470e-22
+  x0 = 19: log2 K_0..K_4 = [19, 76, 196, 442, 940]; log2 g_0 = 38; sum_l ebar_l = 5.294e-23; Pi_inf - 1 = 5.294e-23
+  x0 = 20: log2 K_0..K_4 = [20, 80, 206, 464, 986]; log2 g_0 = 40; sum_l ebar_l = 3.309e-24; Pi_inf - 1 = 3.309e-24
+  x0 = 24: log2 K_0..K_4 = [24, 96, 246, 552, 1170]; log2 g_0 = 48; sum_l ebar_l = 5.049e-29; Pi_inf - 1 = 5.049e-29
+  corollary: bar = 3.22205e-04, q/bar = 6207.2; with f <= Pi log2 K: q/(Pi bar) = q/bar / Pi, Pi - 1 = 8.470e-22
+  first l with log2 K_l >= 1/bar (x0 = 18): l = 6, log2 K_l = 3762; grid levels on the chain: 6
+  sides >= 3: at log2 K = 1/bar = 3104, Pi <= (1-4/g0^2)^(-1958) = 2^1661
+  sides >= 4: at log2 K = 1/bar = 3104, Pi <= (1-4/g0^2)^(-1552) = 2^644.1
+  sides >= 8: at log2 K = 1/bar = 3104, Pi <= (1-4/g0^2)^(-1035) = 2^96.33
+  sides >= 16: at log2 K = 1/bar = 3104, Pi <= (1-4/g0^2)^(-776) = 2^17.63
+  sides >= 64: at log2 K = 1/bar = 3104, Pi <= (1-4/g0^2)^(-517) = 2^0.7291
+  sides >= 1024: at log2 K = 1/bar = 3104, Pi <= (1-4/g0^2)^(-310) = 2^0.001708
+  sides >= 262144: at log2 K = 1/bar = 3104, Pi <= (1-4/g0^2)^(-172) = 2^1.448e-08

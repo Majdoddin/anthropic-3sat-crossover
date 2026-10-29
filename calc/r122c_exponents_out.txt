@@ -1,0 +1,51 @@
+tree today 2 omega(1,1/2,1) = 4.0860; Alman-Li gamma today 1.5676 (rank 26.04), at omega=2 1.3150 (rank 15.40)
+
+== U: ungrouped (= grouped, log C(t,i) naming bits) and Ut (one naming bit per block) ==
+gamma=1.0000: U today 4.0316 (a=0.500), omega=2 3.8333;  Ut today 4.0316, omega=2 3.8333
+gamma=1.1088: U today 4.0860 (a=0.500), omega=2 3.8333;  Ut today 4.0860, omega=2 3.8333
+gamma=1.3150: U today 4.1891 (a=0.500), omega=2 3.8333;  Ut today 4.1891, omega=2 3.8333
+gamma=1.5676: U today 4.2924 (a=0.500), omega=2 3.8333;  Ut today 4.2924, omega=2 3.8333
+U threshold today: gamma < 1.1088, rank < 10.031
+
+== E: grouped counted by ranks ==
+gamma=1.0000: E today 4.0316 (zeta=0.500), omega=2 3.8012 (zeta=0.500)
+gamma=1.1088: E today 4.0860 (zeta=0.500), omega=2 3.8179 (zeta=0.500)
+gamma=1.3150: E today 4.1891 (zeta=0.500), omega=2 3.8179 (zeta=0.500)
+gamma=1.5676: E today 4.2924 (zeta=0.500), omega=2 3.8179 (zeta=0.500)
+E at omega=2 with G factor forbidden (fused/bypass only), gamma=1: 3.8025
+E floor (sizes only) max_z H(z)/3 + 3 + (L56-1) z = 3.8012
+E threshold today: gamma < 1.1088, rank < 10.031
+E beats 23/6 at omega=2 iff gamma < 1.6000 (rank < 27.858); known bound at omega=2: gamma <= 1.3150
+
+== V: covering hybrid ==
+gamma=1.0000: V today 3.9729 (worst a=0.500, d=0.636)
+gamma=1.1088: V today 4.0104 (worst a=0.500, d=0.667)
+gamma=1.5676: V today 4.0790 (worst a=0.500, d=0.921)
+gamma=9 (no octonion factor used): V today 4.0790 (worst a=0.500, d=0.921)
+omega=2: V 3.8333 (worst a=0.500, d=0.502)
+omega=2, a=1/2, hypothetical exact grouping over D-slices: min_d 3.8012 at d=0.5715 (8/7 * 1/2 = 0.5714)
+
+== B: Appendix B pieces on m-bit blocks, m -> infinity ==
+om2: worst mixture cost 3.5475 at ('pure', 0.0); pure u=0: 3.5475
+today: worst mixture cost 4.0802 at ('pure', 0.0); pure u=0: 4.0802
+pure u=0 closed form at omega=2: 2 + 4/(4 - sqrt 2) = 3.546918160678027
+m=64: h=417, 1669 pieces, entropy bound log2(4h+1)/m = 0.1673, max_s min(r_s,c_s)/m = 1.5453 (limit sqrt 2 = 1.4142)
+m=256: h=5371, 21485 pieces, entropy bound log2(4h+1)/m = 0.0562, max_s min(r_s,c_s)/m = 1.4598 (limit sqrt 2 = 1.4142)
+
+== H1: one-bit identity counted by ranks ==
+om2: 4.0000 (z=0.500)
+today: 4.5573 (z=0.500)
+H1 floor (sizes only) max_(z>=1/2) H(z) + 2 + (1-z) log2 3 = 3.7925
+
+== alpha thresholds (chord model; tree = 4 for alpha >= 1/2) ==
+gamma=1.0000 (rank 8.00): U alpha* = 0.5243, E alpha* = 0.5243
+gamma=1.1088 (rank 10.03): U alpha* = 0.5825, E alpha* = 0.5825
+gamma=1.3150 (rank 15.40): U alpha* = 0.6613, E alpha* = 0.6613
+gamma=1.5676 (rank 26.04): U alpha* = 0.7896, E alpha* = 0.7896
+alpha=0.5: V (no octonion factor) 4.0094 (a=0.50, d=0.966); B 4.0000; U(gamma=1) 4.0190
+alpha=0.505: V (no octonion factor) 4.0046 (a=0.50, d=0.958); B 3.9953; U(gamma=1) 4.0153
+alpha=0.52: V (no octonion factor) 3.9902 (a=0.50, d=0.935); B 3.9798; U(gamma=1) 4.0035
+alpha=0.55: V (no octonion factor) 3.9627 (a=0.50, d=0.891); B 3.9501; U(gamma=1) 3.9777
+alpha=0.6: V (no octonion factor) 3.9215 (a=0.50, d=0.820); B 3.9004; U(gamma=1) 3.9262
+alpha=0.7: V (no octonion factor) 3.8581 (a=0.50, d=0.684); B 3.8061; U(gamma=1) 3.8333
+alpha=0.8: V (no octonion factor) 3.8333 (a=0.50, d=0.559); B 3.7159; U(gamma=1) 3.8333

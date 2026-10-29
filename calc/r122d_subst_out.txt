@@ -1,0 +1,47 @@
+values.yaml: omega_now = 2.25, alpha_now = 0.5, omega_rect_curve = 1 + k + 1/(4k)
+w: om2 = omega=2 (w = 2); current = current (values.yaml: alpha 0.5, omega 2.25, w = 1 + k + 1/(4k)); vxxz = VXXZ Table 1 chords (omega 2.371552); current+gen = current (values.yaml: alpha 0.5, omega 2.25, w = 1 + k + 1/(4k)) + AvdBZ general-shape formula (r101b.md)
+rho_bar = G 1.83333, EM 1.81728, E 1.80123, B 1.41421; rho_sym = G 1.83333, EM 1.80123, E 1.80123, B 1.41421
+
+===== K = 9: C(K,2) = 36; input floor 8 (e = 0.2222); tree width bound 18 (e = 0.5000, all trees); SAT bar e ~ 0.36
+-- [om2] w(1/2) = 2.0000, w(4/5) = 2.0000, w(1) = 2.0000; best subset-merge tree 18.0000 (e = 0.5000)
+   G : certified [17.3333, 17.7205] (e in [0.4815, 0.4922]); vs width bound below; vs best tree below
+   EM: certified [17.2691, 17.6563] (e in [0.4797, 0.4905]); vs width bound below; vs best tree below
+   E : certified [17.2049, 17.5921] (e in [0.4779, 0.4887]); vs width bound below; vs best tree below
+   B : certified [15.6569, 15.7250] (e in [0.4349, 0.4368]); vs width bound below; vs best tree below
+-- [current] w(1/2) = 2.0000, w(4/5) = 2.1125, w(1) = 2.2500; best subset-merge tree 20.2500 (e = 0.5625)
+   G : certified [19.1250, 19.5000] (e in [0.5312, 0.5417]); vs width bound not below; vs best tree below
+   EM: certified [18.9083, 19.4278] (e in [0.5252, 0.5397]); vs width bound not below; vs best tree below
+   E : certified [18.9083, 19.3555] (e in [0.5252, 0.5377]); vs width bound not below; vs best tree below
+   B : certified [16.2959, 17.6140] (e in [0.4527, 0.4893]); vs width bound below; vs best tree below
+-- [vxxz] w(1/2) = 2.0430, w(4/5) = 2.2209, w(1) = 2.3716; best subset-merge tree 21.3440 (e = 0.5929)
+   G : certified [20.1582, 20.5535] (e in [0.5599, 0.5709]); vs width bound not below; vs best tree below
+   EM: certified [19.9298, 20.4773] (e in [0.5536, 0.5688]); vs width bound not below; vs best tree below
+   E : certified [19.9298, 20.4012] (e in [0.5536, 0.5667]); vs width bound not below; vs best tree below
+   B : certified [17.1763, 18.5655] (e in [0.4771, 0.5157]); vs width bound undecided; vs best tree below
+-- [current+gen] w(1/2) = 2.0000, w(4/5) = 2.1125, w(1) = 2.2500; best subset-merge tree 20.2500 (e = 0.5625)
+   G : certified [19.1250, 19.5000] (e in [0.5312, 0.5417]); vs width bound not below; vs best tree below (top only; tables certified for the base w)
+   EM: certified [18.9083, 19.4278] (e in [0.5252, 0.5397]); vs width bound not below; vs best tree below (top only; tables certified for the base w)
+   E : certified [18.9083, 19.3555] (e in [0.5252, 0.5377]); vs width bound not below; vs best tree below (top only; tables certified for the base w)
+   B : certified [16.2959, 17.6140] (e in [0.4527, 0.4893]); vs width bound below; vs best tree below (top only; tables certified for the base w)
+
+===== K = 16: C(K,2) = 120; input floor 15 (e = 0.1250); tree width bound 60 (e = 0.5000, all trees); SAT bar e ~ 0.36
+-- [om2] w(1/2) = 2.0000, w(4/5) = 2.0000, w(1) = 2.0000; best subset-merge tree 60.0000 (e = 0.5000)
+   G : certified [60.0000, 60.0000] (e in [0.5000, 0.5000]); vs width bound not below; vs best tree not below
+   EM: certified [59.2294, 59.6147] (e in [0.4936, 0.4968]); vs width bound below; vs best tree below
+   E : certified [59.2294, 59.2294] (e in [0.4936, 0.4936]); vs width bound below; vs best tree below
+   B : certified [49.9411, 57.9411] (e in [0.4162, 0.4828]); vs width bound below; vs best tree below
+-- [current] w(1/2) = 2.0000, w(4/5) = 2.1125, w(1) = 2.2500; best subset-merge tree 64.0000 (e = 0.5333)
+   G : certified [60.0000, 62.2500] (e in [0.5000, 0.5188]); vs width bound not below; vs best tree below
+   EM: certified [59.2294, 61.8647] (e in [0.4936, 0.5155]); vs width bound undecided; vs best tree below
+   E : certified [59.2294, 61.4794] (e in [0.4936, 0.5123]); vs width bound undecided; vs best tree below
+   B : certified [49.9411, 59.9411] (e in [0.4162, 0.4995]); vs width bound below; vs best tree below
+-- [vxxz] w(1/2) = 2.0430, w(4/5) = 2.2209, w(1) = 2.3716; best subset-merge tree 65.3758 (e = 0.5448)
+   G : certified [61.2898, 64.4186] (e in [0.5107, 0.5368]); vs width bound not below; vs best tree below
+   EM: certified [60.5027, 64.0333] (e in [0.5042, 0.5336]); vs width bound not below; vs best tree below
+   E : certified [60.5027, 63.6480] (e in [0.5042, 0.5304]); vs width bound not below; vs best tree below
+   B : certified [51.0147, 60.9135] (e in [0.4251, 0.5076]); vs width bound undecided; vs best tree below
+-- [current+gen] w(1/2) = 2.0000, w(4/5) = 2.1125, w(1) = 2.2500; best subset-merge tree 64.0000 (e = 0.5333)
+   G : certified [60.0000, 62.2500] (e in [0.5000, 0.5188]); vs width bound not below; vs best tree below
+   EM: certified [59.2294, 61.8647] (e in [0.4936, 0.5155]); vs width bound undecided; vs best tree below
+   E : certified [59.2294, 61.4794] (e in [0.4936, 0.5123]); vs width bound undecided; vs best tree below
+   B : certified [49.9411, 59.9411] (e in [0.4162, 0.4995]); vs width bound below; vs best tree below

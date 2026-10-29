@@ -1,0 +1,45 @@
+
+== brute force, Delta = 1 (paper's own remark): bar e < 0.1667
+  baseline (40): rho = 1/sqrt2, x0 = 18, q = 9         level  4, log2 K =       894, e = 0.1586, log2 m* >=        8046
+  q = 2 (top balancing g ~ K)                          level  4, log2 K =       894, e = 0.1586, log2 m* >=        1788
+  x0 = 6                                               level  5, log2 K =       720, e = 0.1263, log2 m* >=        6480
+  rho = 0.6                                            level  3, log2 K =       420, e = 0.1399, log2 m* >=        3780
+  rho = 0.5                                            level  2, log2 K =       186, e = 0.1624, log2 m* >=        1674
+  constant growth beta = 16                            level  4, log2 K =        34, e = 0.1586, log2 m* >=         306
+  constant growth beta = 16, x0 = 6, q = 2             level  5, log2 K =        26, e = 0.1275, log2 m* >=          52
+
+== <= 3 occurrences (m <= n), pathwidth DP 2^{n/3}: bar e < 0.0556
+  baseline (40): rho = 1/sqrt2, x0 = 18, q = 9         level  8, log2 K =     15270, e = 0.0403, log2 m* >=      137430
+  q = 2 (top balancing g ~ K)                          level  8, log2 K =     15270, e = 0.0403, log2 m* >=       30540
+  x0 = 6                                               level  8, log2 K =      6078, e = 0.0450, log2 m* >=       54702
+  rho = 0.6                                            level  5, log2 K =      1848, e = 0.0518, log2 m* >=       16632
+  rho = 0.5                                            level  4, log2 K =       894, e = 0.0435, log2 m* >=        8046
+  constant growth beta = 16                            level  8, log2 K =        50, e = 0.0403, log2 m* >=         450
+  constant growth beta = 16, x0 = 6, q = 2             level  8, log2 K =        38, e = 0.0454, log2 m* >=          76
+
+== counting, Delta = 1, pathwidth DP 2^{0.52 n}: bar e < 0.0867
+  baseline (40): rho = 1/sqrt2, x0 = 18, q = 9         level  6, log2 K =      3762, e = 0.0803, log2 m* >=       33858
+  q = 2 (top balancing g ~ K)                          level  6, log2 K =      3762, e = 0.0803, log2 m* >=        7524
+  x0 = 6                                               level  7, log2 K =      3012, e = 0.0635, log2 m* >=       27108
+  rho = 0.6                                            level  4, log2 K =       894, e = 0.0856, log2 m* >=        8046
+  rho = 0.5                                            level  3, log2 K =       420, e = 0.0850, log2 m* >=        3780
+  constant growth beta = 16                            level  6, log2 K =        42, e = 0.0803, log2 m* >=         378
+  constant growth beta = 16, x0 = 6, q = 2             level  7, log2 K =        34, e = 0.0641, log2 m* >=          68
+
+== decision, Delta = 1, 2^{0.268 m}: bar e < 0.0447
+  baseline (40): rho = 1/sqrt2, x0 = 18, q = 9         level  8, log2 K =     15270, e = 0.0403, log2 m* >=      137430
+  q = 2 (top balancing g ~ K)                          level  8, log2 K =     15270, e = 0.0403, log2 m* >=       30540
+  x0 = 6                                               level  9, log2 K =     12216, e = 0.0318, log2 m* >=      109944
+  rho = 0.6                                            level  6, log2 K =      3762, e = 0.0313, log2 m* >=       33858
+  rho = 0.5                                            level  4, log2 K =       894, e = 0.0435, log2 m* >=        8046
+  constant growth beta = 16                            level  8, log2 K =        50, e = 0.0403, log2 m* >=         450
+  constant growth beta = 16, x0 = 6, q = 2             level  9, log2 K =        42, e = 0.0321, log2 m* >=          84
+
+== counting, Delta = 4.26, Kutzkov 2^{0.716 n}: bar e < 0.0280
+  baseline (40): rho = 1/sqrt2, x0 = 18, q = 9         level 10, log2 K =     61338, e = 0.0201, log2 m* >=      552042
+  q = 2 (top balancing g ~ K)                          level 10, log2 K =     61338, e = 0.0201, log2 m* >=      122676
+  x0 = 6                                               level 10, log2 K =     24498, e = 0.0225, log2 m* >=      220482
+  rho = 0.6                                            level  7, log2 K =      7596, e = 0.0188, log2 m* >=       68364
+  rho = 0.5                                            level  5, log2 K =      1848, e = 0.0220, log2 m* >=       16632
+  constant growth beta = 16                            level 10, log2 K =        58, e = 0.0201, log2 m* >=         522
+  constant growth beta = 16, x0 = 6, q = 2             level 10, log2 K =        46, e = 0.0227, log2 m* >=          92

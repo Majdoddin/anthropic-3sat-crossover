@@ -1,0 +1,27 @@
+--- as in script (unstable lgamma)
+tier 1: e* = 1.441e-04, U/n = 1205, beta/n = 1.00, M/n = 3.41, log2 Delta = 48.1, exponent(e*) = 0.1738
+    rho 0.707 x0 18 q 17: level 26, log2 K = 4.027e+09, log2 n* = 6.845e+10
+    rho 0.707 x0 7 q 2.2: level 26, log2 K = 1.812e+09, log2 n* = 3.986e+09
+    rho 0.500 x0 7 q 2.2: level 13, log2 K = 2.211e+05, log2 n* = 4.864e+05
+tier 2: e* = 3.558e-04, U/n = 1763, beta/n = 2.65, M/n = 5.30, log2 Delta = 45.3, exponent(e*) = 0.4092
+    rho 0.707 x0 18 q 17: level 23, log2 K = 5.033e+08, log2 n* = 8.556e+09
+    rho 0.707 x0 7 q 2.2: level 23, log2 K = 2.265e+08, log2 n* = 4.983e+08
+    rho 0.500 x0 7 q 2.2: level 12, log2 K = 1.105e+05, log2 n* = 2.431e+05
+--- stable
+tier 1: e* = 1.611e-04, U/n = 2539, beta/n = 2.12, M/n = 7.24, log2 Delta = 47.8, exponent(e*) = 0.4092
+    rho 0.707 x0 18 q 17: level 25, log2 K = 2.013e+09, log2 n* = 3.423e+10
+    rho 0.707 x0 7 q 2.2: level 25, log2 K = 9.060e+08, log2 n* = 1.993e+09
+    rho 0.500 x0 7 q 2.2: level 13, log2 K = 2.211e+05, log2 n* = 4.864e+05
+tier 2: e* = 3.558e-04, U/n = 1417, beta/n = 2.13, M/n = 4.26, log2 Delta = 45.3, exponent(e*) = 0.4092
+    rho 0.707 x0 18 q 17: level 23, log2 K = 5.033e+08, log2 n* = 8.556e+09
+    rho 0.707 x0 7 q 2.2: level 23, log2 K = 2.265e+08, log2 n* = 4.983e+08
+    rho 0.500 x0 7 q 2.2: level 12, log2 K = 1.105e+05, log2 n* = 2.431e+05
+--- unstable exponent(e,1) sampled near 1.44e-4:
+  e=1.20e-04: unstable 0.1462  stable 0.3095
+  e=1.30e-04: unstable 0.1577  stable 0.3339
+  e=1.40e-04: unstable 0.1691  stable 0.3582
+  e=1.44e-04: unstable 0.9341  stable 0.3679
+  e=1.45e-04: unstable 0.9402  stable 0.3703
+  e=1.50e-04: unstable 0.1805  stable 0.3824
+  e=1.60e-04: unstable 0.1919  stable 0.4066
+  e=1.70e-04: unstable 0.6480  stable 0.4306

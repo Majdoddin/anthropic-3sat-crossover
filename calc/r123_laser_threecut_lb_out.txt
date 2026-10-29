@@ -1,0 +1,5 @@
+admissible (q, r) pairs on the grid: 45
+(i) symmetric families: min over families of adversary value = 4.0000 at (qA,rA,pB,rB) = (np.float64(0.5), np.float64(1.5), np.float64(0.25), np.float64(1.75))
+(ii) independent families (random + coordinate descent): min value = 3.0000
+     families: [[(2.0, np.float64(2.0), np.float64(0.0)), (np.float64(2.0), 2.0, np.float64(0.0))], [(2.0, np.float64(2.0), np.float64(0.0)), (np.float64(0.0), 2.0, np.float64(2.0))], [(2.0, np.float64(0.0), np.float64(2.0)), (np.float64(0.0), 2.0, np.float64(2.0))]]
+(iii) reference, r122b layout with ideal pieces: 3.0000

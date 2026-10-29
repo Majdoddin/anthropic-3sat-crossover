@@ -1,0 +1,20 @@
+
+== density 1.0: bar e < 0.1321
+  brute force (paper)      e0 = 0.50000: x0  9, levels 4, log2 K =      797; log2 m* >=     7177 (q = 9),    1595 (q = 2 crude)
+  tree, VXXZ curve         e0 = 0.25537: x0 11, levels 2, log2 K =      171; log2 m* >=     1538 (q = 9),     342 (q = 2 crude)
+  tree, alpha >= 1/2       e0 = 0.25000: x0 10, levels 2, log2 K =      160; log2 m* >=     1441 (q = 9),     320 (q = 2 crude)
+
+== density 2.0: bar e < 0.0711
+  brute force (paper)      e0 = 0.50000: x0  8, levels 6, log2 K =     2980; log2 m* >=    26824 (q = 9),    5961 (q = 2 crude)
+  tree, VXXZ curve         e0 = 0.25537: x0  9, levels 4, log2 K =      734; log2 m* >=     6610 (q = 9),    1469 (q = 2 crude)
+  tree, alpha >= 1/2       e0 = 0.25000: x0  9, levels 4, log2 K =      713; log2 m* >=     6418 (q = 9),    1426 (q = 2 crude)
+
+== density 3.0: bar e < 0.0444
+  brute force (paper)      e0 = 0.50000: x0 13, levels 7, log2 K =     9116; log2 m* >=    82048 (q = 9),   18233 (q = 2 crude)
+  tree, VXXZ curve         e0 = 0.25537: x0  8, levels 6, log2 K =     2569; log2 m* >=    23117 (q = 9),    5137 (q = 2 crude)
+  tree, alpha >= 1/2       e0 = 0.25000: x0 14, levels 5, log2 K =     2245; log2 m* >=    20206 (q = 9),    4490 (q = 2 crude)
+
+== density 4.26: bar e < 0.0302
+  brute force (paper)      e0 = 0.50000: x0  7, levels 9, log2 K =    20704; log2 m* >=   186340 (q = 9),   41409 (q = 2 crude)
+  tree, VXXZ curve         e0 = 0.25537: x0  8, levels 7, log2 K =     5332; log2 m* >=    47986 (q = 9),   10664 (q = 2 crude)
+  tree, alpha >= 1/2       e0 = 0.25000: x0  8, levels 7, log2 K =     5265; log2 m* >=    47387 (q = 9),   10530 (q = 2 crude)

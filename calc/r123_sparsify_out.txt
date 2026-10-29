@@ -1,0 +1,112 @@
+eps, alpha_exact, alpha_Calabro = 8/eps lg(128/eps), lg Delta: paper / exact_cnt
+  1.00e-02     5899.0    10915.1   34.8 /  30.1
+  1.00e-03    73551.2   135726.3   42.1 /  37.3
+  3.56e-04   224708.4   414737.9   45.3 /  40.6
+  1.00e-04   878642.8  1623017.0   49.3 /  44.5
+lg C(m, n_bar+1)/n at Calabro-as-quoted Delta, double vs 50 digits (n = 1e12):
+  eps 1.00e-02: lg Delta  34.8, double 1.1564, 50-digit 1.1565
+  eps 1.00e-03: lg Delta  42.1, double 1.1682, 50-digit 1.1362
+  eps 3.56e-04: lg Delta  45.3, double 1.6493, 50-digit 1.1290
+  eps 1.00e-04: lg Delta  49.3, double 0.0000, 50-digit 1.1212
+== A: r123_general as is (double-precision U, eps >= e), Calabro as quoted: reproduces r123_general_out.txt
+   bar deterministic 3-SAT (Liu) 0.4092
+  calabro_paper      e* = 3.70e-04, eps = 4.40e-04, lg Delta =  44.7, U/n =    1020; rho = 0.707, x0 = 18, q = 17: level 23, lg K = 5.03e+08, lg n* >= 8.56e+09
+  calabro_paper      e* = 3.70e-04, eps = 4.40e-04, lg Delta =  44.7, U/n =    1020; rho = 0.707, x0 = 7, q = 2.2: level 23, lg K = 2.26e+08, lg n* >= 4.98e+08
+  calabro_paper      e* = 3.70e-04, eps = 4.40e-04, lg Delta =  44.7, U/n =    1020; rho = 0.500, x0 = 7, q = 2.2: level 12, lg K = 1.10e+05, lg n* >= 2.43e+05
+== A: r123_general as is (double-precision U, eps >= e), Calabro as quoted: reproduces r123_general_out.txt
+   bar #3-SAT (Kutzkov) 0.7157
+  calabro_paper      e* = 6.50e-04, eps = 4.95e-02, lg Delta =  29.7, U/n =    1024; rho = 0.707, x0 = 18, q = 17: level 21, lg K = 1.26e+08, lg n* >= 2.14e+09
+  calabro_paper      e* = 6.50e-04, eps = 4.95e-02, lg Delta =  29.7, U/n =    1024; rho = 0.707, x0 = 7, q = 2.2: level 21, lg K = 5.66e+07, lg n* >= 1.25e+08
+  calabro_paper      e* = 6.50e-04, eps = 4.95e-02, lg Delta =  29.7, U/n =    1024; rho = 0.500, x0 = 7, q = 2.2: level 11, lg K = 5.52e+04, lg n* >= 1.21e+05
+== B: high-precision U, eps >= e (the paper takes eps in [e, 2e])
+   bar deterministic 3-SAT (Liu) 0.4092
+  calabro_paper      e* = 3.56e-04, eps = 2.71e-02, lg Delta =  31.6, U/n =    1074; rho = 0.707, x0 = 18, q = 17: level 23, lg K = 5.03e+08, lg n* >= 8.56e+09
+  calabro_paper      e* = 3.56e-04, eps = 2.71e-02, lg Delta =  31.6, U/n =    1074; rho = 0.707, x0 = 7, q = 2.2: level 23, lg K = 2.26e+08, lg n* >= 4.98e+08
+  calabro_paper      e* = 3.56e-04, eps = 2.71e-02, lg Delta =  31.6, U/n =    1074; rho = 0.500, x0 = 7, q = 2.2: level 12, lg K = 1.10e+05, lg n* >= 2.43e+05
+  calabro_exact_cnt  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.707, x0 = 18, q = 17: level 23, lg K = 5.03e+08, lg n* >= 8.56e+09
+  calabro_exact_cnt  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.707, x0 = 7, q = 2.2: level 23, lg K = 2.26e+08, lg n* >= 4.98e+08
+  calabro_exact_cnt  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.500, x0 = 7, q = 2.2: level 12, lg K = 1.10e+05, lg n* >= 2.43e+05
+  calabro_exact_dec  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.707, x0 = 18, q = 17: level 23, lg K = 5.03e+08, lg n* >= 8.56e+09
+  calabro_exact_dec  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.707, x0 = 7, q = 2.2: level 23, lg K = 2.26e+08, lg n* >= 4.98e+08
+  calabro_exact_dec  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.500, x0 = 7, q = 2.2: level 12, lg K = 1.10e+05, lg n* >= 2.43e+05
+  floor_log          e* = 1.34e-03, eps = 3.80e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 18, q = 17: level 19, lg K = 3.15e+07, lg n* >= 5.35e+08
+  floor_log          e* = 1.34e-03, eps = 3.80e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 7, q = 2.2: level 19, lg K = 1.42e+07, lg n* >= 3.11e+07
+  floor_log          e* = 1.34e-03, eps = 3.80e-03, lg Delta =   3.0, U/n =     302; rho = 0.500, x0 = 7, q = 2.2: level 10, lg K = 2.76e+04, lg n* >= 6.06e+04
+  ideal_inv_eps      e* = 1.04e-03, eps = 4.70e-02, lg Delta =   4.4, U/n =     349; rho = 0.707, x0 = 18, q = 17: level 20, lg K = 6.29e+07, lg n* >= 1.07e+09
+  ideal_inv_eps      e* = 1.04e-03, eps = 4.70e-02, lg Delta =   4.4, U/n =     349; rho = 0.707, x0 = 7, q = 2.2: level 20, lg K = 2.83e+07, lg n* >= 6.23e+07
+  ideal_inv_eps      e* = 1.04e-03, eps = 4.70e-02, lg Delta =   4.4, U/n =     349; rho = 0.500, x0 = 7, q = 2.2: level 10, lg K = 2.76e+04, lg n* >= 6.06e+04
+  const_8            e* = 1.35e-03, eps = 1.35e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 18, q = 17: level 19, lg K = 3.15e+07, lg n* >= 5.35e+08
+  const_8            e* = 1.35e-03, eps = 1.35e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 7, q = 2.2: level 19, lg K = 1.42e+07, lg n* >= 3.11e+07
+  const_8            e* = 1.35e-03, eps = 1.35e-03, lg Delta =   3.0, U/n =     302; rho = 0.500, x0 = 7, q = 2.2: level 10, lg K = 2.76e+04, lg n* >= 6.06e+04
+  const_2_noclamp    e* = 1.94e-03, eps = 1.94e-03, lg Delta =   1.0, U/n =     210; rho = 0.707, x0 = 18, q = 17: level 18, lg K = 1.57e+07, lg n* >= 2.67e+08
+  const_2_noclamp    e* = 1.94e-03, eps = 1.94e-03, lg Delta =   1.0, U/n =     210; rho = 0.707, x0 = 7, q = 2.2: level 18, lg K = 7.08e+06, lg n* >= 1.56e+07
+  const_2_noclamp    e* = 1.94e-03, eps = 1.94e-03, lg Delta =   1.0, U/n =     210; rho = 0.500, x0 = 7, q = 2.2: level 9, lg K = 1.38e+04, lg n* >= 3.03e+04
+== B: high-precision U, eps >= e (the paper takes eps in [e, 2e])
+   bar #3-SAT (Kutzkov) 0.7157
+  calabro_paper      e* = 6.50e-04, eps = 4.95e-02, lg Delta =  29.7, U/n =    1024; rho = 0.707, x0 = 18, q = 17: level 21, lg K = 1.26e+08, lg n* >= 2.14e+09
+  calabro_paper      e* = 6.50e-04, eps = 4.95e-02, lg Delta =  29.7, U/n =    1024; rho = 0.707, x0 = 7, q = 2.2: level 21, lg K = 5.66e+07, lg n* >= 1.25e+08
+  calabro_paper      e* = 6.50e-04, eps = 4.95e-02, lg Delta =  29.7, U/n =    1024; rho = 0.500, x0 = 7, q = 2.2: level 11, lg K = 5.52e+04, lg n* >= 1.21e+05
+  calabro_exact_cnt  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.707, x0 = 18, q = 17: level 21, lg K = 1.26e+08, lg n* >= 2.14e+09
+  calabro_exact_cnt  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.707, x0 = 7, q = 2.2: level 21, lg K = 5.66e+07, lg n* >= 1.25e+08
+  calabro_exact_cnt  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.500, x0 = 7, q = 2.2: level 11, lg K = 5.52e+04, lg n* >= 1.21e+05
+  calabro_exact_dec  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.707, x0 = 18, q = 17: level 21, lg K = 1.26e+08, lg n* >= 2.14e+09
+  calabro_exact_dec  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.707, x0 = 7, q = 2.2: level 21, lg K = 5.66e+07, lg n* >= 1.25e+08
+  calabro_exact_dec  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.500, x0 = 7, q = 2.2: level 11, lg K = 5.52e+04, lg n* >= 1.21e+05
+  floor_log          e* = 2.36e-03, eps = 3.97e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 18, q = 17: level 17, lg K = 7.86e+06, lg n* >= 1.34e+08
+  floor_log          e* = 2.36e-03, eps = 3.97e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 7, q = 2.2: level 17, lg K = 3.54e+06, lg n* >= 7.79e+06
+  floor_log          e* = 2.36e-03, eps = 3.97e-03, lg Delta =   3.0, U/n =     302; rho = 0.500, x0 = 7, q = 2.2: level 9, lg K = 1.38e+04, lg n* >= 3.03e+04
+  ideal_inv_eps      e* = 1.97e-03, eps = 1.06e-01, lg Delta =   3.2, U/n =     310; rho = 0.707, x0 = 18, q = 17: level 18, lg K = 1.57e+07, lg n* >= 2.67e+08
+  ideal_inv_eps      e* = 1.97e-03, eps = 1.06e-01, lg Delta =   3.2, U/n =     310; rho = 0.707, x0 = 7, q = 2.2: level 18, lg K = 7.08e+06, lg n* >= 1.56e+07
+  ideal_inv_eps      e* = 1.97e-03, eps = 1.06e-01, lg Delta =   3.2, U/n =     310; rho = 0.500, x0 = 7, q = 2.2: level 9, lg K = 1.38e+04, lg n* >= 3.03e+04
+  const_8            e* = 2.37e-03, eps = 2.37e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 18, q = 17: level 17, lg K = 7.86e+06, lg n* >= 1.34e+08
+  const_8            e* = 2.37e-03, eps = 2.37e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 7, q = 2.2: level 17, lg K = 3.54e+06, lg n* >= 7.79e+06
+  const_8            e* = 2.37e-03, eps = 2.37e-03, lg Delta =   3.0, U/n =     302; rho = 0.500, x0 = 7, q = 2.2: level 9, lg K = 1.38e+04, lg n* >= 3.03e+04
+  const_2_noclamp    e* = 3.40e-03, eps = 3.40e-03, lg Delta =   1.0, U/n =     210; rho = 0.707, x0 = 18, q = 17: level 16, lg K = 3.93e+06, lg n* >= 6.68e+07
+  const_2_noclamp    e* = 3.40e-03, eps = 3.40e-03, lg Delta =   1.0, U/n =     210; rho = 0.707, x0 = 7, q = 2.2: level 16, lg K = 1.77e+06, lg n* >= 3.89e+06
+  const_2_noclamp    e* = 3.40e-03, eps = 3.40e-03, lg Delta =   1.0, U/n =     210; rho = 0.500, x0 = 7, q = 2.2: level 8, lg K = 6.84e+03, lg n* >= 1.51e+04
+== C: high-precision U, eps optimised over e 2^{j/4}, j >= -40 (eps < e allowed)
+   bar deterministic 3-SAT (Liu) 0.4092
+  calabro_paper      e* = 3.56e-04, eps = 2.71e-02, lg Delta =  31.6, U/n =    1074; rho = 0.707, x0 = 18, q = 17: level 23, lg K = 5.03e+08, lg n* >= 8.56e+09
+  calabro_paper      e* = 3.56e-04, eps = 2.71e-02, lg Delta =  31.6, U/n =    1074; rho = 0.707, x0 = 7, q = 2.2: level 23, lg K = 2.26e+08, lg n* >= 4.98e+08
+  calabro_paper      e* = 3.56e-04, eps = 2.71e-02, lg Delta =  31.6, U/n =    1074; rho = 0.500, x0 = 7, q = 2.2: level 12, lg K = 1.10e+05, lg n* >= 2.43e+05
+  calabro_exact_cnt  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.707, x0 = 18, q = 17: level 23, lg K = 5.03e+08, lg n* >= 8.56e+09
+  calabro_exact_cnt  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.707, x0 = 7, q = 2.2: level 23, lg K = 2.26e+08, lg n* >= 4.98e+08
+  calabro_exact_cnt  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.500, x0 = 7, q = 2.2: level 12, lg K = 1.10e+05, lg n* >= 2.43e+05
+  calabro_exact_dec  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.707, x0 = 18, q = 17: level 23, lg K = 5.03e+08, lg n* >= 8.56e+09
+  calabro_exact_dec  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.707, x0 = 7, q = 2.2: level 23, lg K = 2.26e+08, lg n* >= 4.98e+08
+  calabro_exact_dec  e* = 4.02e-04, eps = 3.06e-02, lg Delta =  26.5, U/n =     942; rho = 0.500, x0 = 7, q = 2.2: level 12, lg K = 1.10e+05, lg n* >= 2.43e+05
+  floor_log          e* = 1.34e-03, eps = 3.80e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 18, q = 17: level 19, lg K = 3.15e+07, lg n* >= 5.35e+08
+  floor_log          e* = 1.34e-03, eps = 3.80e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 7, q = 2.2: level 19, lg K = 1.42e+07, lg n* >= 3.11e+07
+  floor_log          e* = 1.34e-03, eps = 3.80e-03, lg Delta =   3.0, U/n =     302; rho = 0.500, x0 = 7, q = 2.2: level 10, lg K = 2.76e+04, lg n* >= 6.06e+04
+  ideal_inv_eps      e* = 1.04e-03, eps = 4.70e-02, lg Delta =   4.4, U/n =     349; rho = 0.707, x0 = 18, q = 17: level 20, lg K = 6.29e+07, lg n* >= 1.07e+09
+  ideal_inv_eps      e* = 1.04e-03, eps = 4.70e-02, lg Delta =   4.4, U/n =     349; rho = 0.707, x0 = 7, q = 2.2: level 20, lg K = 2.83e+07, lg n* >= 6.23e+07
+  ideal_inv_eps      e* = 1.04e-03, eps = 4.70e-02, lg Delta =   4.4, U/n =     349; rho = 0.500, x0 = 7, q = 2.2: level 10, lg K = 2.76e+04, lg n* >= 6.06e+04
+  const_8            e* = 1.36e-03, eps = 1.32e-06, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 18, q = 17: level 19, lg K = 3.15e+07, lg n* >= 5.35e+08
+  const_8            e* = 1.36e-03, eps = 1.32e-06, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 7, q = 2.2: level 19, lg K = 1.42e+07, lg n* >= 3.11e+07
+  const_8            e* = 1.36e-03, eps = 1.32e-06, lg Delta =   3.0, U/n =     302; rho = 0.500, x0 = 7, q = 2.2: level 10, lg K = 2.76e+04, lg n* >= 6.06e+04
+  const_2_noclamp    e* = 1.95e-03, eps = 1.91e-06, lg Delta =   1.0, U/n =     210; rho = 0.707, x0 = 18, q = 17: level 18, lg K = 1.57e+07, lg n* >= 2.67e+08
+  const_2_noclamp    e* = 1.95e-03, eps = 1.91e-06, lg Delta =   1.0, U/n =     210; rho = 0.707, x0 = 7, q = 2.2: level 18, lg K = 7.08e+06, lg n* >= 1.56e+07
+  const_2_noclamp    e* = 1.95e-03, eps = 1.91e-06, lg Delta =   1.0, U/n =     210; rho = 0.500, x0 = 7, q = 2.2: level 9, lg K = 1.38e+04, lg n* >= 3.03e+04
+== C: high-precision U, eps optimised over e 2^{j/4}, j >= -40 (eps < e allowed)
+   bar #3-SAT (Kutzkov) 0.7157
+  calabro_paper      e* = 6.50e-04, eps = 4.95e-02, lg Delta =  29.7, U/n =    1024; rho = 0.707, x0 = 18, q = 17: level 21, lg K = 1.26e+08, lg n* >= 2.14e+09
+  calabro_paper      e* = 6.50e-04, eps = 4.95e-02, lg Delta =  29.7, U/n =    1024; rho = 0.707, x0 = 7, q = 2.2: level 21, lg K = 5.66e+07, lg n* >= 1.25e+08
+  calabro_paper      e* = 6.50e-04, eps = 4.95e-02, lg Delta =  29.7, U/n =    1024; rho = 0.500, x0 = 7, q = 2.2: level 11, lg K = 5.52e+04, lg n* >= 1.21e+05
+  calabro_exact_cnt  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.707, x0 = 18, q = 17: level 21, lg K = 1.26e+08, lg n* >= 2.14e+09
+  calabro_exact_cnt  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.707, x0 = 7, q = 2.2: level 21, lg K = 5.66e+07, lg n* >= 1.25e+08
+  calabro_exact_cnt  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.500, x0 = 7, q = 2.2: level 11, lg K = 5.52e+04, lg n* >= 1.21e+05
+  calabro_exact_dec  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.707, x0 = 18, q = 17: level 21, lg K = 1.26e+08, lg n* >= 2.14e+09
+  calabro_exact_dec  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.707, x0 = 7, q = 2.2: level 21, lg K = 5.66e+07, lg n* >= 1.25e+08
+  calabro_exact_dec  e* = 7.40e-04, eps = 6.70e-02, lg Delta =  23.9, U/n =     877; rho = 0.500, x0 = 7, q = 2.2: level 11, lg K = 5.52e+04, lg n* >= 1.21e+05
+  floor_log          e* = 2.36e-03, eps = 3.97e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 18, q = 17: level 17, lg K = 7.86e+06, lg n* >= 1.34e+08
+  floor_log          e* = 2.36e-03, eps = 3.97e-03, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 7, q = 2.2: level 17, lg K = 3.54e+06, lg n* >= 7.79e+06
+  floor_log          e* = 2.36e-03, eps = 3.97e-03, lg Delta =   3.0, U/n =     302; rho = 0.500, x0 = 7, q = 2.2: level 9, lg K = 1.38e+04, lg n* >= 3.03e+04
+  ideal_inv_eps      e* = 1.97e-03, eps = 1.06e-01, lg Delta =   3.2, U/n =     310; rho = 0.707, x0 = 18, q = 17: level 18, lg K = 1.57e+07, lg n* >= 2.67e+08
+  ideal_inv_eps      e* = 1.97e-03, eps = 1.06e-01, lg Delta =   3.2, U/n =     310; rho = 0.707, x0 = 7, q = 2.2: level 18, lg K = 7.08e+06, lg n* >= 1.56e+07
+  ideal_inv_eps      e* = 1.97e-03, eps = 1.06e-01, lg Delta =   3.2, U/n =     310; rho = 0.500, x0 = 7, q = 2.2: level 9, lg K = 1.38e+04, lg n* >= 3.03e+04
+  const_8            e* = 2.37e-03, eps = 2.32e-06, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 18, q = 17: level 17, lg K = 7.86e+06, lg n* >= 1.34e+08
+  const_8            e* = 2.37e-03, eps = 2.32e-06, lg Delta =   3.0, U/n =     302; rho = 0.707, x0 = 7, q = 2.2: level 17, lg K = 3.54e+06, lg n* >= 7.79e+06
+  const_8            e* = 2.37e-03, eps = 2.32e-06, lg Delta =   3.0, U/n =     302; rho = 0.500, x0 = 7, q = 2.2: level 9, lg K = 1.38e+04, lg n* >= 3.03e+04
+  const_2_noclamp    e* = 3.41e-03, eps = 3.33e-06, lg Delta =   1.0, U/n =     210; rho = 0.707, x0 = 18, q = 17: level 16, lg K = 3.93e+06, lg n* >= 6.68e+07
+  const_2_noclamp    e* = 3.41e-03, eps = 3.33e-06, lg Delta =   1.0, U/n =     210; rho = 0.707, x0 = 7, q = 2.2: level 16, lg K = 1.77e+06, lg n* >= 3.89e+06
+  const_2_noclamp    e* = 3.41e-03, eps = 3.33e-06, lg Delta =   1.0, U/n =     210; rho = 0.500, x0 = 7, q = 2.2: level 8, lg K = 6.84e+03, lg n* >= 1.51e+04

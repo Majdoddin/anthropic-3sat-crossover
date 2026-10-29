@@ -1,0 +1,12 @@
+calabro_paper    e*=3.56e-04 rho=0.707 x0=18 q=17: levels 23, log2 n* 8.56e+09
+calabro_paper    e*=3.56e-04 rho=0.707 x0=7 q=2.2: levels 23, log2 n* 4.98e+08
+calabro_paper    e*=3.56e-04 rho=0.625 x0=18 q=17: levels 17, log2 n* 1.34e+08
+calabro_paper    e*=3.56e-04 rho=0.625 x0=7 q=2.2: levels 17, log2 n* 7.79e+06
+calabro_paper    e*=3.56e-04 rho=0.500 x0=18 q=17: levels 12, log2 n* 4.18e+06
+calabro_paper    e*=3.56e-04 rho=0.500 x0=7 q=2.2: levels 12, log2 n* 2.43e+05
+const_2_noclamp  e*=1.95e-03 rho=0.707 x0=18 q=17: levels 18, log2 n* 2.67e+08
+const_2_noclamp  e*=1.95e-03 rho=0.707 x0=7 q=2.2: levels 18, log2 n* 1.56e+07
+const_2_noclamp  e*=1.95e-03 rho=0.625 x0=18 q=17: levels 13, log2 n* 8.35e+06
+const_2_noclamp  e*=1.95e-03 rho=0.625 x0=7 q=2.2: levels 13, log2 n* 4.86e+05
+const_2_noclamp  e*=1.95e-03 rho=0.500 x0=18 q=17: levels 9, log2 n* 5.21e+05
+const_2_noclamp  e*=1.95e-03 rho=0.500 x0=7 q=2.2: levels 9, log2 n* 3.03e+04

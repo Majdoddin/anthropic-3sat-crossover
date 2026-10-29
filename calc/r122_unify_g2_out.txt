@@ -1,0 +1,8 @@
+om2      B: joint max-min exponent of N at K = 4: 3.5657
+om2      G: joint max-min exponent of N at K = 4: 3.8333
+om2      E: joint max-min exponent of N at K = 4: 3.8205
+om2      U: joint max-min exponent of N at K = 4: 3.8333
+current  B: joint max-min exponent of N at K = 4: 3.9153
+current  G: joint max-min exponent of N at K = 4: 4.0938
+current  E: joint max-min exponent of N at K = 4: 4.0938
+current  U: joint max-min exponent of N at K = 4: 4.0938

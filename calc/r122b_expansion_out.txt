@@ -1,0 +1,8 @@
+lambda=3 seed=0: Z=-9050, sum_Q Z_Q=-18100, 2^t Z=-18100, equal=True, top table via octonion tensor equal=True, via one matrix product (re-indexing) equal=True
+lambda=3 seed=1: Z=44266, sum_Q Z_Q=88532, 2^t Z=88532, equal=True, top table via octonion tensor equal=True, via one matrix product (re-indexing) equal=True
+negative control lambda=3 top=yx bottom=vu: sum_Q Z_Q == 2^t Z: False
+negative control lambda=3 top=xy bottom=uv: sum_Q Z_Q == 2^t Z: False
+lambda=6 seed=0: Z=-11919769, sum_Q Z_Q=-47679076, 2^t Z=-47679076, equal=True, top table via octonion tensor equal=True, via one matrix product (re-indexing) equal=True
+lambda=6 seed=1: Z=22260437, sum_Q Z_Q=89041748, 2^t Z=89041748, equal=True, top table via octonion tensor equal=True, via one matrix product (re-indexing) equal=True
+negative control lambda=6 top=yx bottom=vu: sum_Q Z_Q == 2^t Z: False
+negative control lambda=6 top=xy bottom=uv: sum_Q Z_Q == 2^t Z: False

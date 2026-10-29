@@ -1,0 +1,59 @@
+K = 6, 2 x 3 grid, Appendix B pieces (m -> infinity): certified sup over all terms of min(rows, columns)
+(branch and bound over u in [-2,2]^3, box bound by monotonicity at the upper corner in rho/kappa; TOL 0.002)
+
+Omega_w monotonicity conditions:
+  w = omega=2 (w = 2): min w' = 0.0000 (>= 0 needed), min (w - k w') = 2.0000 (>= 1 needed), w(1) = 2.0000
+    -> holds
+  w = current (values.yaml: alpha 0.5, omega 2.25, w = 1 + k + 1/(4k)): min w' = 0.0000 (>= 0 needed), min (w - k w') = 1.5001 (>= 1 needed), w(1) = 2.2500
+    -> holds
+  w = VXXZ Table 1 chords (omega 2.371552): min w' = 0.0000 (>= 0 needed), min (w - k w') = 1.5893 (>= 1 needed), w(1) = 2.3716
+    -> holds
+
+om2: omega=2 (w = 2)
+  random monotonicity spot check violations: 0 / 600
+  old search profile re-evaluated: 7.3572
+  best profile found: 7.35720 at u = [2.0, -0.8177, -0.8177] (e = 0.4905)
+  CERTIFIED upper bound: Phi <= 7.35917 (e <= 0.4906); 1940 evaluations
+  breakdown at best profile: rho = [2.0, 1.0873, 1.0873], kappa = [0.0, 1.6786, 1.6786]; rows: top 7.1747, max(top, tables) 7.3572; columns: top 7.3572, max(top, tables) 7.3572
+  best subset-merge tree under the same w: 8.0000; width bound for all trees bw(6) = 8
+  margin to the tree: 0.6408; to the width bound 8: 0.6408
+
+current: current (values.yaml: alpha 0.5, omega 2.25, w = 1 + k + 1/(4k))
+  random monotonicity spot check violations: 0 / 600
+  old search profile re-evaluated: 8.0141
+  best profile found: 8.01410 at u = [-0.7199, -0.2258, -0.2258] (e = 0.5343)
+  CERTIFIED upper bound: Phi <= 8.01609 (e <= 0.5344); 4656 evaluations
+  breakdown at best profile: rho = [1.1314, 1.332, 1.332], kappa = [1.6492, 1.4919, 1.4919]; rows: top 6.7954, max(top, tables) 8.0141; columns: top 8.0141, max(top, tables) 8.0141
+  best subset-merge tree under the same w: 9.0000; width bound for all trees bw(6) = 8
+  margin to the tree: 0.9839; to the width bound 8: -0.0161
+
+vxxz: VXXZ Table 1 chords (omega 2.371552)
+  random monotonicity spot check violations: 0 / 600
+  old search profile re-evaluated: 8.4329
+  best profile found: 8.43988 at u = [-0.252, -0.2539, -0.6836] (e = 0.5627)
+  CERTIFIED upper bound: Phi <= 8.44187 (e <= 0.5628); 6742 evaluations
+  breakdown at best profile: rho = [1.3221, 1.3214, 1.1473], kappa = [1.5007, 1.5013, 1.6382]; rows: top 6.7909, max(top, tables) 8.4399; columns: top 8.4399, max(top, tables) 8.4399
+  best subset-merge tree under the same w: 9.3965; width bound for all trees bw(6) = 8
+  margin to the tree: 0.9546; to the width bound 8: -0.4419
+
+Finite block length m (exact partition numbers): every per-block point (min(r_s/m,2), min(c_s/m,2)) lies in
+the disc of radius 2 t_m, so a rectangle's mean (rho, kappa) is dominated by t_m (sqrt(2+u), sqrt(2-u)) capped at 2;
+terms are computed separately: + 3 log2(4h+1)/m for the 3 rectangles (per-block re-indexing 2^O(m) is N^o(1)).
+m=128: h=1459, t_m=1.05976, rho_bar_m=1.4923, 3 log2(4h+1)/m = 0.2932  (0 s)
+   [om2] certified Phi_m <= 7.5243 + 0.2932 = 7.8175 (e <= 0.5212); tree 8.0000: below; width bound 8: below
+   [current] certified Phi_m <= 8.1983 + 0.2932 = 8.4916 (e <= 0.5661); tree 9.0000: below; width bound 8: not below
+   [vxxz] certified Phi_m <= 8.6378 + 0.2932 = 8.9310 (e <= 0.5954); tree 9.3965: below; width bound 8: not below
+m=256: h=5371, t_m=1.03567, rho_bar_m=1.4598, 3 log2(4h+1)/m = 0.1686  (3 s)
+   [om2] certified Phi_m <= 7.4575 + 0.1686 = 7.6261 (e <= 0.5084); tree 8.0000: below; width bound 8: below
+   [current] certified Phi_m <= 8.1223 + 0.1686 = 8.2909 (e <= 0.5527); tree 9.0000: below; width bound 8: not below
+   [vxxz] certified Phi_m <= 8.5583 + 0.1686 = 8.7270 (e <= 0.5818); tree 9.3965: below; width bound 8: not below
+m=512: h=20444, t_m=1.02087, rho_bar_m=1.4404, 3 log2(4h+1)/m = 0.0956  (24 s)
+   [om2] certified Phi_m <= 7.4166 + 0.0956 = 7.5122 (e <= 0.5008); tree 8.0000: below; width bound 8: below
+   [current] certified Phi_m <= 8.0757 + 0.0956 = 8.1713 (e <= 0.5448); tree 9.0000: below; width bound 8: not below
+   [vxxz] certified Phi_m <= 8.5098 + 0.0956 = 8.6054 (e <= 0.5737); tree 9.3965: below; width bound 8: not below
+m=1024: h=79446, t_m=1.01198, rho_bar_m=1.4290, 3 log2(4h+1)/m = 0.0535  (259 s)
+   [om2] certified Phi_m <= 7.3919 + 0.0535 = 7.4455 (e <= 0.4964); tree 8.0000: below; width bound 8: below
+   [current] certified Phi_m <= 8.0489 + 0.0535 = 8.1024 (e <= 0.5402); tree 9.0000: below; width bound 8: not below
+   [vxxz] certified Phi_m <= 8.4804 + 0.0535 = 8.5340 (e <= 0.5689); tree 9.3965: below; width bound 8: not below
+
+time 792.9 s
