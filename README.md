@@ -3,7 +3,7 @@
 This repository holds the scripts behind the computed values of the paper *Lowered crossover points of Anthropic's
 subexponential 3-SAT algorithm*
 (Ruhollah Majdoddin, October 2026), each with the output it produced. The paper itself is [`paper.pdf`](paper.pdf), the
-version submitted to arXiv on 29 October 2026. The paper refers to the scripts by the path
+version submitted to arXiv on 30 October 2026. The paper refers to the scripts by the path
 `calc/NAME.py` relative to the top of this repository. The table below lists, for every script, the items of the paper whose values
 it computes or checks and the output file in which the values appear.
 
@@ -93,6 +93,7 @@ can differ from the output in its last digit.
 | `r123_levers_paths.py` | Table 10 (Appendix B.1): the per-level schedules of the model of `r123_levers.py`, with log2 K_1 = 38.5 and 40.7 (computed) | `r123_levers_paths_out.txt` | 1 |
 | `r123_schedule.py` | Remark 3.3: closed-form slack schedule against the optimum (2529 / 2474, 5258 / 5177, 22343 / 21996; gamma = 0.031, 0.026, 0.019) (computed) | `r123_schedule_out.txt` | 1 |
 | `r123_baseline.py` | Section 3.3: 8046 at level 4, which reproduces the remark "log m > 8000" of Anthropic's paper; Table 7 row growth of K (378) (computed with the paper's schedule; the levers are hypothetical) | `r123_baseline_out.txt` (prints), `r123_baseline_out.json` | 1 |
+| `r123_szeider_check.py` | Section 1, footnote 1: the model of Section 3.3 against exhaustive search, log2 m* >= 275616 at m = 5n (the value of Szeider's addendum) and 8046 at m = n (check) | `r123_szeider_check_out.txt` | 1 |
 | `r123_general.py` | Table 5, rows G0, G5, G7; abstract 2^{2.2e12}; Section 3.2 (counting and randomized bars move the thresholds by one or two levels); Section 3.10 (U/n about 16300, e* = 2.5e-5, 31 levels) (estimate) | `r123_general_out.txt`, `r123_general_out.json` | 1 |
 | `r123_general_stable.py` | Table 5, rows G1, G4; Section 3.10 (U/n about 2500, e* = 1.6e-4, 25 levels); Table 7, about 1400 bits per variable in row G7 (estimate) | `r123_general_stable_out.txt` (prints) | 1 |
 | `r123_sparsify.py` | Table 7, row sparsification density (6.2e7, 1.6e7, 32x); text after Proposition 3.15 (U/n about 210, 4.7 bits); row G7 with Calabro's bound as quoted (estimate) | `r123_sparsify_out.txt`, `r123_sparsify_out.json` | 1 |

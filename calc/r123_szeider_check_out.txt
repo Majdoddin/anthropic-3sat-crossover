@@ -1,0 +1,2 @@
+exhaustive search, m = 1 n: bar e < 0.1667; level 4, log2 K = 894, e = 0.1586, log2 m* >= 8046
+exhaustive search, m = 5 n: bar e < 0.0333; level 9, log2 K = 30624, e = 0.0285, log2 m* >= 275616
