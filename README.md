@@ -2,7 +2,8 @@
 
 This repository holds the scripts behind the computed values of the paper *Lowered crossover points of Anthropic's
 subexponential 3-SAT algorithm*
-(Ruhollah Majdoddin, October 2026), each with the output it produced. The paper refers to the scripts by the path
+(Ruhollah Majdoddin, October 2026), each with the output it produced. The paper itself is [`paper.pdf`](paper.pdf), the
+version submitted to arXiv on 29 October 2026. The paper refers to the scripts by the path
 `calc/NAME.py` relative to the top of this repository. The table below lists, for every script, the items of the paper whose values
 it computes or checks and the output file in which the values appear.
 
@@ -110,4 +111,5 @@ The recorded outputs belong to version 1 of the paper on arXiv.
 
 ## Licence
 
-The scripts are released under the MIT licence; see `LICENSE`.
+The scripts are released under the MIT licence; see `LICENSE`. The licence does not cover the paper `paper.pdf`,
+which is © 2026 Ruhollah Majdoddin, all rights reserved.
